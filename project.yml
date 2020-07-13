@@ -1,0 +1,29 @@
+name: QiitaChecker
+targets:
+  QiitaChecker:
+    type: application
+    platform: iOS
+    sources: 
+      - QiitaChecker
+    settings:
+      base:
+        MARKETING_VERSIONS: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        DEVELOPMENT_TEAM: Kaoru Muta
+        INFOPLIST_FILE: QiitaChecker/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaChecker
+  QiitaCheckerTests:
+    type: bundle.unit-test
+    platform: iOS
+    settings:
+      base:
+        INFOPLIST_FILE: QiitaCheckerTests/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaCheckerTests
+  QiitaCheckerUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    settings:
+      base:
+        INFOPLIST_FILE: QiitaCheckerUITests/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaCheckerUITests
+    
