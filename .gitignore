@@ -98,7 +98,6 @@ vendor
 # XcodeGen
 *.xcodeproj
 *.xcworkspace
-Info.plist
 
 # Custom Setting
 QiitaChecker.xd
