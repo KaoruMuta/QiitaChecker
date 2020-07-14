@@ -10,16 +10,17 @@ targets:
         MARKETING_VERSIONS: 1.0.0
         CURRENT_PROJECT_VERSION: 1
         DEVELOPMENT_TEAM: Kaoru Muta
-        INFOPLIST_FILE: QiitaChecker/Info.plist
+        INFOPLIST_FILE: QiitaChecker/Common/Resource/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaChecker
     dependencies:
-      - carthage: RxSwift.framework
+      - carthage: RxSwift
         linkType: static
-      - carthage: RxCocoa.framework
+      - carthage: RxCocoa
         linkType: static
-      - carthage: RxRelay.framework
+      - carthage: RxRelay
         linkType: static
       - carthage: Alamofire
+      - carthage: Parchment
     preBuildScripts:
       - script: |
           Pods/SwiftLint/swiftlint autocorrect
