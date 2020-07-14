@@ -14,8 +14,11 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaChecker
     dependencies:
       - carthage: RxSwift
+        linktype: static
       - carthage: RxCocoa
+        linktype: static
       - carthage: RxRelay
+        linktype: static
       - carthage: Alamofire
     postbuildScripts:
       - script: ${SRCROOT}/Pods/SwiftLint/swiftlint autocorrect\n${PODS_ROOT}/SwiftLint/swiftlint lint
