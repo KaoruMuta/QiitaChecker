@@ -62,9 +62,8 @@ playground.xcworkspace
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
-Carthage/Build/
+Carthage
+Carthage_*
 
 # Accio dependency management
 Dependencies/
@@ -89,6 +88,9 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+# XcodeGen
+*.xcodeproj
+*.xcworkspace
 
 # Custom Setting
 QiitaChecker.xd

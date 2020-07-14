@@ -12,6 +12,11 @@ targets:
         DEVELOPMENT_TEAM: Kaoru Muta
         INFOPLIST_FILE: QiitaChecker/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaChecker
+    dependencies:
+      - carthage: RxSwift
+      - carthage: RxCocoa
+      - carthage: RxRelay
+      - carthage: Alamofire
   QiitaCheckerTests:
     type: bundle.unit-test
     platform: iOS
