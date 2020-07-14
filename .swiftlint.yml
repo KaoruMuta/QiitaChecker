@@ -1,0 +1,38 @@
+disabled_rules:
+  - type_name
+  - trailing_whitespace # allow to have a space
+  - unused_closure_parameter # allow to exist unused parameter
+opt_in_rules:
+
+included:
+  - QiitaChecker
+excluded:
+  - Pods
+  - Carthage
+
+line_length: 300
+
+type_body_length:
+  - 300 # warning
+  - 400 # error
+
+variable_name_max_length:
+  - 60 # warning
+  - 80 # error
+
+variable_name_min_length:
+  - 1 # warning
+  - 0 # error
+
+identifier_name:
+  min_length:
+      error: 0 # only error
+  excluded:
+    - id
+    - no
+
+cyclomatic_complexity: 20
+
+function_body_length:
+  - 100 # warning
+  - 200 # error

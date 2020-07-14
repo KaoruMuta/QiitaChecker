@@ -20,9 +20,13 @@ targets:
       - carthage: RxRelay.framework
         linkType: static
       - carthage: Alamofire
-    postCompileScripts:
-      - script: ${SRCROOT}/Pods/SwiftLint/swiftlint autocorrect\n${PODS_ROOT}/SwiftLint/swiftlint lint
-        name: Swiftlint Run Script
+    preBuildScripts:
+      - script: |
+          Pods/SwiftLint/swiftlint autocorrect
+        name: SwiftLint AutoCorrect
+      - script: |
+          Pods/SwiftLint/swiftlint
+        name: SwiftLint
   QiitaCheckerTests:
     type: bundle.unit-test
     platform: iOS
