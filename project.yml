@@ -13,14 +13,14 @@ targets:
         INFOPLIST_FILE: QiitaChecker/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaChecker
     dependencies:
-      - carthage: RxSwift
-        linktype: static
-      - carthage: RxCocoa
-        linktype: static
-      - carthage: RxRelay
-        linktype: static
+      - carthage: RxSwift.framework
+        linkType: static
+      - carthage: RxCocoa.framework
+        linkType: static
+      - carthage: RxRelay.framework
+        linkType: static
       - carthage: Alamofire
-    postbuildScripts:
+    postCompileScripts:
       - script: ${SRCROOT}/Pods/SwiftLint/swiftlint autocorrect\n${PODS_ROOT}/SwiftLint/swiftlint lint
         name: Swiftlint Run Script
   QiitaCheckerTests:
@@ -30,6 +30,8 @@ targets:
       base:
         INFOPLIST_FILE: QiitaCheckerTests/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaCheckerTests
+    dependencies: 
+      - target: QiitaChecker
   QiitaCheckerUITests:
     type: bundle.ui-testing
     platform: iOS
@@ -37,4 +39,6 @@ targets:
       base:
         INFOPLIST_FILE: QiitaCheckerUITests/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaCheckerUITests
+    dependencies: 
+      - target: QiitaChecker
     
