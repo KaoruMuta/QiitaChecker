@@ -17,6 +17,9 @@ targets:
       - carthage: RxCocoa
       - carthage: RxRelay
       - carthage: Alamofire
+    postbuildScripts:
+      - script: ${SRCROOT}/Pods/SwiftLint/swiftlint autocorrect\n${PODS_ROOT}/SwiftLint/swiftlint lint
+        name: Swiftlint Run Script
   QiitaCheckerTests:
     type: bundle.unit-test
     platform: iOS
