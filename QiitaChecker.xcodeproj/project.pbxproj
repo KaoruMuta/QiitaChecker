@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07BA7228334D42FB88ECDF8F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F20D224C495CF4867DE949A /* RxCocoa.framework */; };
+		0A512980744ED0F811274FD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1194FC15075C6FD70ADE340B /* LaunchScreen.storyboard */; };
 		10142456986559A99F8992A5 /* Parchment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 985C3FBACF887EEE20B0C9A2 /* Parchment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		149DEAC750A722B98A8D5ACD /* Parchment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985C3FBACF887EEE20B0C9A2 /* Parchment.framework */; };
 		220E901B110567DEAF01667C /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F20D224C495CF4867DE949A /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -15,21 +16,31 @@
 		2AA05A982AC06046A13B1C2C /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 716A869B46A63677873A812B /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3B450F9A4FD078412B99E216 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E7959E387B71D5F104D73C7D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3D64F1CF4EBA18B8D51E8327 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7959E387B71D5F104D73C7D /* RxSwift.framework */; };
-		431FBD3D09258758EE0E890E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D5FD425C47B32B9C786E00 /* Main.storyboard */; };
 		589B0F41A275759B4CAAF046 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86824AA9B901163818F3106B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B5B2494EF4E23029BD49CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA56720F51F079039C989D0 /* Assets.xcassets */; };
 		617BDE4C893CFA641B4C63BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400BE335045A06B2DD9721B8 /* AppDelegate.swift */; };
-		75ED7AAB627B246A93A8CBC6 /* Pods_QiitaChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E2FE43413BE28BC68CC43B /* Pods_QiitaChecker.framework */; };
+		785A5D47D3EC13E5A339D9E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F76EF93708EC7451430A98 /* HomeViewController.swift */; };
 		7DD5916CDE01404CC4F18274 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 716A869B46A63677873A812B /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7DDEA2FA1FF6CA61C31D130A /* Floaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475C9A6CDC03D889959666C7 /* Floaty.framework */; };
 		7FD6DB6F9093E448C425021E /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F20D224C495CF4867DE949A /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A660F75DE22327EABF641A08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18B8F0D1E1FB5E04CEB7598 /* LaunchScreen.storyboard */; };
+		8AFB69D19ACBCE51C495E4E8 /* Pods_QiitaChecker_QiitaCheckerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 986C9D613E7289CD1B50FA03 /* Pods_QiitaChecker_QiitaCheckerUITests.framework */; };
+		9CF3F2D71F85F107616D79DC /* Pods_QiitaChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44095A22A435230AE486C630 /* Pods_QiitaChecker.framework */; };
+		A9EBDDC7EBDEE100B9C98B51 /* Floaty.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 475C9A6CDC03D889959666C7 /* Floaty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC152B0B741B3812DFD20709 /* Parchment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 985C3FBACF887EEE20B0C9A2 /* Parchment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ADBFBD44A4D921A096C38918 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940EBC0D0B24F054582A32E /* ViewController.swift */; };
 		B0BA4AD5E16E02F42D837B06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7917C6CFC952169C4601A2 /* SceneDelegate.swift */; };
+		B9C88240A537DE36899CE76C /* Pods_QiitaCheckerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EA50EE4949C32F4EE88F82 /* Pods_QiitaCheckerTests.framework */; };
+		BFC866B8F9D84A2543CE6D9D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C258846743D0065795F546 /* Home.storyboard */; };
 		DAF53656776732D22020648A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86824AA9B901163818F3106B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ED98BD68288C12D8FF2D6145 /* Pods_QiitaCheckerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778DE43BA461C7115DE97761 /* Pods_QiitaCheckerTests.framework */; };
+		E247D17A24BE04CB0007FC65 /* LatestPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D17924BE04CB0007FC65 /* LatestPostViewController.swift */; };
+		E247D17C24BE04E30007FC65 /* LatestPostViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E247D17B24BE04E30007FC65 /* LatestPostViewController.storyboard */; };
+		E247D18324BE074D0007FC65 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D18124BE074D0007FC65 /* PostCell.swift */; };
+		E247D18424BE074D0007FC65 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E247D18224BE074D0007FC65 /* PostCell.xib */; };
+		E247D18624BEAD7A0007FC65 /* LatestPostDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D18524BEAD7A0007FC65 /* LatestPostDataSource.swift */; };
+		E247D18924BEAF2B0007FC65 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D18824BEAF2B0007FC65 /* UIViewController+.swift */; };
+		E247D19324BF22400007FC65 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D19224BF22400007FC65 /* UITableView+.swift */; };
+		E247D19524BF25CC0007FC65 /* Foundation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D19424BF25CC0007FC65 /* Foundation+.swift */; };
+		E69A599072C1D1F172E3C3D5 /* Floaty.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 475C9A6CDC03D889959666C7 /* Floaty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5B3EA6FC0F8A83DC9CBAC46 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A869B46A63677873A812B /* RxRelay.framework */; };
-		F90C33DE5C7D6DE119304168 /* Pods_QiitaChecker_QiitaCheckerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019912EE5415EA28EFB1BB21 /* Pods_QiitaChecker_QiitaCheckerUITests.framework */; };
 		FC72F3C3953854637D1C136F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86824AA9B901163818F3106B /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +69,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				589B0F41A275759B4CAAF046 /* Alamofire.framework in Embed Frameworks */,
+				E69A599072C1D1F172E3C3D5 /* Floaty.framework in Embed Frameworks */,
 				AC152B0B741B3812DFD20709 /* Parchment.framework in Embed Frameworks */,
 				7FD6DB6F9093E448C425021E /* RxCocoa.framework in Embed Frameworks */,
 				7DD5916CDE01404CC4F18274 /* RxRelay.framework in Embed Frameworks */,
@@ -73,6 +85,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				DAF53656776732D22020648A /* Alamofire.framework in Embed Frameworks */,
+				A9EBDDC7EBDEE100B9C98B51 /* Floaty.framework in Embed Frameworks */,
 				10142456986559A99F8992A5 /* Parchment.framework in Embed Frameworks */,
 				220E901B110567DEAF01667C /* RxCocoa.framework in Embed Frameworks */,
 				2AA05A982AC06046A13B1C2C /* RxRelay.framework in Embed Frameworks */,
@@ -84,33 +97,50 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		019912EE5415EA28EFB1BB21 /* Pods_QiitaChecker_QiitaCheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaChecker_QiitaCheckerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9B4FF23A3546889264B574 /* Pods-QiitaCheckerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaCheckerTests.debug.xcconfig"; path = "Target Support Files/Pods-QiitaCheckerTests/Pods-QiitaCheckerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F20D224C495CF4867DE949A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
+		27F9CFAD9A9A70CDCFC9DEA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		299C80B248FBDF6FBD1289F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		396884903B1A182D6FE05ED1 /* Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; path = "Target Support Files/Pods-QiitaChecker-QiitaCheckerUITests/Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		400BE335045A06B2DD9721B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45E2FE43413BE28BC68CC43B /* Pods_QiitaChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54125BE96554D7C1FD57E4D7 /* Pods-QiitaCheckerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaCheckerTests.release.xcconfig"; path = "Target Support Files/Pods-QiitaCheckerTests/Pods-QiitaCheckerTests.release.xcconfig"; sourceTree = "<group>"; };
+		44095A22A435230AE486C630 /* Pods_QiitaChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		475C9A6CDC03D889959666C7 /* Floaty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Floaty.framework; sourceTree = "<group>"; };
 		57BF2776BB53C69E03644131 /* QiitaChecker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = QiitaChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB646EA72114387F7E7C46B /* Pods-QiitaCheckerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaCheckerTests.release.xcconfig"; path = "Target Support Files/Pods-QiitaCheckerTests/Pods-QiitaCheckerTests.release.xcconfig"; sourceTree = "<group>"; };
 		716A869B46A63677873A812B /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxRelay.framework; sourceTree = "<group>"; };
-		778DE43BA461C7115DE97761 /* Pods_QiitaCheckerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaCheckerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7940EBC0D0B24F054582A32E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		832FD0CA477EF8A49662B889 /* Pods-QiitaChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker.debug.xcconfig"; path = "Target Support Files/Pods-QiitaChecker/Pods-QiitaChecker.debug.xcconfig"; sourceTree = "<group>"; };
+		7203FAEFE4E5D7607D2A5A86 /* Pods-QiitaChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker.release.xcconfig"; path = "Target Support Files/Pods-QiitaChecker/Pods-QiitaChecker.release.xcconfig"; sourceTree = "<group>"; };
+		83F76EF93708EC7451430A98 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		86824AA9B901163818F3106B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		8ABCA8DE88B4D38FCFD37307 /* Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; path = "Target Support Files/Pods-QiitaChecker-QiitaCheckerUITests/Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E7917C6CFC952169C4601A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9627CC09AA4A2F8D963903C7 /* Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig"; path = "Target Support Files/Pods-QiitaChecker-QiitaCheckerUITests/Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		97EA50EE4949C32F4EE88F82 /* Pods_QiitaCheckerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaCheckerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985C3FBACF887EEE20B0C9A2 /* Parchment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parchment.framework; sourceTree = "<group>"; };
+		986C9D613E7289CD1B50FA03 /* Pods_QiitaChecker_QiitaCheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QiitaChecker_QiitaCheckerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E4618D575892C1240555BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		A165DB404CB2074142CB99A9 /* QiitaCheckerUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = QiitaCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE6FB71C244309BD40FAC3E4 /* Pods-QiitaCheckerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaCheckerTests.debug.xcconfig"; path = "Target Support Files/Pods-QiitaCheckerTests/Pods-QiitaCheckerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B420D3927773AC66385326C7 /* QiitaCheckerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = QiitaCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD8A2BE55643E4DC28357E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDA56720F51F079039C989D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D1653FE8A1A410E3993B8793 /* Pods-QiitaChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker.release.xcconfig"; path = "Target Support Files/Pods-QiitaChecker/Pods-QiitaChecker.release.xcconfig"; sourceTree = "<group>"; };
+		D8A67FC519791420B7F50B61 /* Pods-QiitaChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker.debug.xcconfig"; path = "Target Support Files/Pods-QiitaChecker/Pods-QiitaChecker.debug.xcconfig"; sourceTree = "<group>"; };
+		E247D17924BE04CB0007FC65 /* LatestPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPostViewController.swift; sourceTree = "<group>"; };
+		E247D17B24BE04E30007FC65 /* LatestPostViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LatestPostViewController.storyboard; sourceTree = "<group>"; };
+		E247D18124BE074D0007FC65 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		E247D18224BE074D0007FC65 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		E247D18524BEAD7A0007FC65 /* LatestPostDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPostDataSource.swift; sourceTree = "<group>"; };
+		E247D18824BEAF2B0007FC65 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		E247D19224BF22400007FC65 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		E247D19424BF25CC0007FC65 /* Foundation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+.swift"; sourceTree = "<group>"; };
 		E7959E387B71D5F104D73C7D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
-		F118EBFFF05665FFC463162D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E838037A0C5E8DF16E0A5225 /* Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig"; path = "Target Support Files/Pods-QiitaChecker-QiitaCheckerUITests/Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		39B80868223FC20FBAE43ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9C88240A537DE36899CE76C /* Pods_QiitaCheckerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		62A318E294352E537D423E6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -120,23 +150,16 @@
 				F5B3EA6FC0F8A83DC9CBAC46 /* RxRelay.framework in Frameworks */,
 				FC72F3C3953854637D1C136F /* Alamofire.framework in Frameworks */,
 				149DEAC750A722B98A8D5ACD /* Parchment.framework in Frameworks */,
-				75ED7AAB627B246A93A8CBC6 /* Pods_QiitaChecker.framework in Frameworks */,
+				7DDEA2FA1FF6CA61C31D130A /* Floaty.framework in Frameworks */,
+				9CF3F2D71F85F107616D79DC /* Pods_QiitaChecker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CCD41C64261B9C554021326 /* Frameworks */ = {
+		E7DAAE2A23DEFFD162417D86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED98BD68288C12D8FF2D6145 /* Pods_QiitaCheckerTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B26523E31F53DF4DFC475AA1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F90C33DE5C7D6DE119304168 /* Pods_QiitaChecker_QiitaCheckerUITests.framework in Frameworks */,
+				8AFB69D19ACBCE51C495E4E8 /* Pods_QiitaChecker_QiitaCheckerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,10 +169,8 @@
 		10D7187D521A27B76209D94D /* QiitaChecker */ = {
 			isa = PBXGroup;
 			children = (
-				E18B8F0D1E1FB5E04CEB7598 /* LaunchScreen.storyboard */,
-				F1D5FD425C47B32B9C786E00 /* Main.storyboard */,
-				7940EBC0D0B24F054582A32E /* ViewController.swift */,
 				64E74184D95DBA619CA3BEEF /* Common */,
+				784ADC260AF0BDFDD147FB29 /* Presentation */,
 			);
 			path = QiitaChecker;
 			sourceTree = "<group>";
@@ -158,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				86824AA9B901163818F3106B /* Alamofire.framework */,
+				475C9A6CDC03D889959666C7 /* Floaty.framework */,
 				985C3FBACF887EEE20B0C9A2 /* Parchment.framework */,
 				1F20D224C495CF4867DE949A /* RxCocoa.framework */,
 				716A869B46A63677873A812B /* RxRelay.framework */,
@@ -166,18 +188,14 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		20862CF5F781CB7DD80ED209 /* Pods */ = {
+		20ED43BAD9FDF578E0A41138 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				832FD0CA477EF8A49662B889 /* Pods-QiitaChecker.debug.xcconfig */,
-				D1653FE8A1A410E3993B8793 /* Pods-QiitaChecker.release.xcconfig */,
-				9627CC09AA4A2F8D963903C7 /* Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig */,
-				8ABCA8DE88B4D38FCFD37307 /* Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig */,
-				AE6FB71C244309BD40FAC3E4 /* Pods-QiitaCheckerTests.debug.xcconfig */,
-				54125BE96554D7C1FD57E4D7 /* Pods-QiitaCheckerTests.release.xcconfig */,
+				1194FC15075C6FD70ADE340B /* LaunchScreen.storyboard */,
+				E247D17E24BE06470007FC65 /* LatestPost */,
+				E247D17D24BE062A0007FC65 /* Home */,
 			);
-			name = Pods;
-			path = Pods;
+			path = View;
 			sourceTree = "<group>";
 		};
 		47F70E87DADF245968280542 /* Products */ = {
@@ -196,7 +214,7 @@
 				10D7187D521A27B76209D94D /* QiitaChecker */,
 				7C9CA769D3D4F12AF58A7F3B /* Frameworks */,
 				47F70E87DADF245968280542 /* Products */,
-				20862CF5F781CB7DD80ED209 /* Pods */,
+				D86D74A87EDFF01AD3921C34 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +223,7 @@
 			children = (
 				9ADA64DBD2518AB566191C33 /* Application */,
 				AF207E6F1F92282A5D79CF46 /* Resource */,
+				E247D18724BEAF080007FC65 /* Extension */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -218,13 +237,21 @@
 			path = Carthage/Build;
 			sourceTree = "<group>";
 		};
+		784ADC260AF0BDFDD147FB29 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				20ED43BAD9FDF578E0A41138 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		7C9CA769D3D4F12AF58A7F3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				6F746A4EFED95A027010CF86 /* Carthage */,
-				45E2FE43413BE28BC68CC43B /* Pods_QiitaChecker.framework */,
-				019912EE5415EA28EFB1BB21 /* Pods_QiitaChecker_QiitaCheckerUITests.framework */,
-				778DE43BA461C7115DE97761 /* Pods_QiitaCheckerTests.framework */,
+				44095A22A435230AE486C630 /* Pods_QiitaChecker.framework */,
+				986C9D613E7289CD1B50FA03 /* Pods_QiitaChecker_QiitaCheckerUITests.framework */,
+				97EA50EE4949C32F4EE88F82 /* Pods_QiitaCheckerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -247,6 +274,50 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		D86D74A87EDFF01AD3921C34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8A67FC519791420B7F50B61 /* Pods-QiitaChecker.debug.xcconfig */,
+				7203FAEFE4E5D7607D2A5A86 /* Pods-QiitaChecker.release.xcconfig */,
+				E838037A0C5E8DF16E0A5225 /* Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig */,
+				396884903B1A182D6FE05ED1 /* Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig */,
+				0A9B4FF23A3546889264B574 /* Pods-QiitaCheckerTests.debug.xcconfig */,
+				6AB646EA72114387F7E7C46B /* Pods-QiitaCheckerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E247D17D24BE062A0007FC65 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				83F76EF93708EC7451430A98 /* HomeViewController.swift */,
+				40C258846743D0065795F546 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E247D17E24BE06470007FC65 /* LatestPost */ = {
+			isa = PBXGroup;
+			children = (
+				E247D17924BE04CB0007FC65 /* LatestPostViewController.swift */,
+				E247D18524BEAD7A0007FC65 /* LatestPostDataSource.swift */,
+				E247D18124BE074D0007FC65 /* PostCell.swift */,
+				E247D17B24BE04E30007FC65 /* LatestPostViewController.storyboard */,
+				E247D18224BE074D0007FC65 /* PostCell.xib */,
+			);
+			path = LatestPost;
+			sourceTree = "<group>";
+		};
+		E247D18724BEAF080007FC65 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E247D18824BEAF2B0007FC65 /* UIViewController+.swift */,
+				E247D19224BF22400007FC65 /* UITableView+.swift */,
+				E247D19424BF25CC0007FC65 /* Foundation+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,7 +325,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 820B33C1C0950E28F7F7DD4F /* Build configuration list for PBXNativeTarget "QiitaChecker" */;
 			buildPhases = (
-				FC4E3A7ACFE287735B6566F1 /* [CP] Check Pods Manifest.lock */,
+				8B69F0279F48ED640DC88BB8 /* [CP] Check Pods Manifest.lock */,
 				BDCBAD9B44895B5768D51F04 /* SwiftLint AutoCorrect */,
 				55A668B6C67C931B8BB0C91E /* SwiftLint */,
 				8C4EF61E8C3BA6C4847B3093 /* Sources */,
@@ -275,10 +346,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AE17D5BA2EC528DC4547B05 /* Build configuration list for PBXNativeTarget "QiitaCheckerUITests" */;
 			buildPhases = (
-				5C28F83DB7263C7DA5998911 /* [CP] Check Pods Manifest.lock */,
+				10550F50CCF3296E3658883A /* [CP] Check Pods Manifest.lock */,
 				AAA181186D25997BB4265016 /* Sources */,
 				E86ECE30F6C41053BB3F6A10 /* Embed Frameworks */,
-				B26523E31F53DF4DFC475AA1 /* Frameworks */,
+				E7DAAE2A23DEFFD162417D86 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,10 +365,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 878563CFB4B924D4EC239438 /* Build configuration list for PBXNativeTarget "QiitaCheckerTests" */;
 			buildPhases = (
-				B66ACCED37934D104B2D3BB5 /* [CP] Check Pods Manifest.lock */,
+				D5C46217BFE33588D22AC763 /* [CP] Check Pods Manifest.lock */,
 				D6439D276330CFC48CF20B66 /* Sources */,
 				4588161BE579A7F14719978E /* Embed Frameworks */,
-				9CCD41C64261B9C554021326 /* Frameworks */,
+				39B80868223FC20FBAE43ED9 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,6 +404,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = 50D025BA0CEA0470C4F69080;
@@ -353,33 +425,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5B2494EF4E23029BD49CA8 /* Assets.xcassets in Resources */,
-				A660F75DE22327EABF641A08 /* LaunchScreen.storyboard in Resources */,
-				431FBD3D09258758EE0E890E /* Main.storyboard in Resources */,
+				BFC866B8F9D84A2543CE6D9D /* Home.storyboard in Resources */,
+				E247D18424BE074D0007FC65 /* PostCell.xib in Resources */,
+				0A512980744ED0F811274FD9 /* LaunchScreen.storyboard in Resources */,
+				E247D17C24BE04E30007FC65 /* LatestPostViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		55A668B6C67C931B8BB0C91E /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "Pods/SwiftLint/swiftlint\n";
-		};
-		5C28F83DB7263C7DA5998911 /* [CP] Check Pods Manifest.lock */ = {
+		10550F50CCF3296E3658883A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,7 +457,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B66ACCED37934D104B2D3BB5 /* [CP] Check Pods Manifest.lock */ = {
+		55A668B6C67C931B8BB0C91E /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "Pods/SwiftLint/swiftlint\n";
+		};
+		8B69F0279F48ED640DC88BB8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,7 +490,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QiitaCheckerTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-QiitaChecker-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -448,6 +522,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Floaty.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Parchment.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
@@ -456,6 +531,7 @@
 			name = Carthage;
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Floaty.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Parchment.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxRelay.framework",
@@ -465,7 +541,7 @@
 			shellPath = /bin/sh;
 			shellScript = "carthage copy-frameworks\n";
 		};
-		FC4E3A7ACFE287735B6566F1 /* [CP] Check Pods Manifest.lock */ = {
+		D5C46217BFE33588D22AC763 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,7 +556,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-QiitaChecker-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-QiitaCheckerTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -494,9 +570,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E247D18924BEAF2B0007FC65 /* UIViewController+.swift in Sources */,
+				E247D19524BF25CC0007FC65 /* Foundation+.swift in Sources */,
+				E247D19324BF22400007FC65 /* UITableView+.swift in Sources */,
 				617BDE4C893CFA641B4C63BB /* AppDelegate.swift in Sources */,
+				785A5D47D3EC13E5A339D9E4 /* HomeViewController.swift in Sources */,
 				B0BA4AD5E16E02F42D837B06 /* SceneDelegate.swift in Sources */,
-				ADBFBD44A4D921A096C38918 /* ViewController.swift in Sources */,
+				E247D18624BEAD7A0007FC65 /* LatestPostDataSource.swift in Sources */,
+				E247D17A24BE04CB0007FC65 /* LatestPostViewController.swift in Sources */,
+				E247D18324BE074D0007FC65 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,20 +612,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E18B8F0D1E1FB5E04CEB7598 /* LaunchScreen.storyboard */ = {
+		1194FC15075C6FD70ADE340B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CD8A2BE55643E4DC28357E33 /* Base */,
+				27F9CFAD9A9A70CDCFC9DEA7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		F1D5FD425C47B32B9C786E00 /* Main.storyboard */ = {
+		40C258846743D0065795F546 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F118EBFFF05665FFC463162D /* Base */,
+				9E4618D575892C1240555BA5 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -602,7 +684,7 @@
 		};
 		2F7C04E1B698FE0AF3EB7425 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8ABCA8DE88B4D38FCFD37307 /* Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig */;
+			baseConfigurationReference = 396884903B1A182D6FE05ED1 /* Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -624,7 +706,7 @@
 		};
 		3FFFCB609209122B8B092332 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9627CC09AA4A2F8D963903C7 /* Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig */;
+			baseConfigurationReference = E838037A0C5E8DF16E0A5225 /* Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -646,7 +728,7 @@
 		};
 		6320C66D17DC6B3DA9D3A7CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54125BE96554D7C1FD57E4D7 /* Pods-QiitaCheckerTests.release.xcconfig */;
+			baseConfigurationReference = 6AB646EA72114387F7E7C46B /* Pods-QiitaCheckerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -669,7 +751,7 @@
 		};
 		8881E702CE356F9CB1A795C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 832FD0CA477EF8A49662B889 /* Pods-QiitaChecker.debug.xcconfig */;
+			baseConfigurationReference = D8A67FC519791420B7F50B61 /* Pods-QiitaChecker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -693,7 +775,7 @@
 		};
 		8E5D530723A57AC3BC20906D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1653FE8A1A410E3993B8793 /* Pods-QiitaChecker.release.xcconfig */;
+			baseConfigurationReference = 7203FAEFE4E5D7607D2A5A86 /* Pods-QiitaChecker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -717,7 +799,7 @@
 		};
 		D126210B82B55B4319E23925 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE6FB71C244309BD40FAC3E4 /* Pods-QiitaCheckerTests.debug.xcconfig */;
+			baseConfigurationReference = 0A9B4FF23A3546889264B574 /* Pods-QiitaCheckerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
