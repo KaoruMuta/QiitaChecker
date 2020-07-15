@@ -13,8 +13,8 @@ extension LatestPostViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell
+        let cell = tableView.dequeueReusableCell(with: PostCell.self, for: indexPath)
         
-        return cell!
+        return cell
     }
 }

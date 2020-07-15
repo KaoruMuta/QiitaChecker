@@ -51,9 +51,7 @@ class HomeViewController: UIViewController {
 
 }
 
-extension HomeViewController: HomeView {
-    
-}
+extension HomeViewController: HomeView {}
 
 extension HomeViewController: PagingViewControllerDataSource {
     func numberOfViewControllers(in pagingViewController: PagingViewController) -> Int {
