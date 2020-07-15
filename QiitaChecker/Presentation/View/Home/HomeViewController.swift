@@ -35,10 +35,10 @@ class HomeViewController: UIViewController {
         pagingViewController.view.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
-          pagingViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-          pagingViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-          pagingViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-          pagingViewController.view.topAnchor.constraint(equalTo: view.topAnchor)
+            pagingViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            pagingViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            pagingViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            pagingViewController.view.topAnchor.constraint(equalTo: view.topAnchor)
         ])
         
         pagingViewController.dataSource = self

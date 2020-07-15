@@ -19,7 +19,7 @@ class LatestPostViewController: UIViewController {
     }
     
     private func configure() {
-        postListView.register(UINib(nibName: "PostCell", bundle: nil), forCellReuseIdentifier: "PostCell")
+        postListView.register(cellType: PostCell.self)
         postListView.delegate = self
         postListView.dataSource = self
     }
