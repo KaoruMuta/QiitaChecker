@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LatestPostViewController: UIViewController {
+class PostViewController: UIViewController {
     
     @IBOutlet private weak var postListView: UITableView!
 
@@ -25,9 +25,9 @@ class LatestPostViewController: UIViewController {
     }
 }
 
-extension LatestPostViewController: StoryboardInstantiatable {}
+extension PostViewController: StoryboardInstantiatable {}
 
-extension LatestPostViewController: UITableViewDelegate {
+extension PostViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension LatestPostViewController: UITableViewDataSource {
+extension PostViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }

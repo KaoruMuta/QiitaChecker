@@ -31,11 +31,11 @@
 		B9C88240A537DE36899CE76C /* Pods_QiitaCheckerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EA50EE4949C32F4EE88F82 /* Pods_QiitaCheckerTests.framework */; };
 		BFC866B8F9D84A2543CE6D9D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C258846743D0065795F546 /* Home.storyboard */; };
 		DAF53656776732D22020648A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86824AA9B901163818F3106B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E247D17A24BE04CB0007FC65 /* LatestPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D17924BE04CB0007FC65 /* LatestPostViewController.swift */; };
-		E247D17C24BE04E30007FC65 /* LatestPostViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E247D17B24BE04E30007FC65 /* LatestPostViewController.storyboard */; };
+		E247D17A24BE04CB0007FC65 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D17924BE04CB0007FC65 /* PostViewController.swift */; };
+		E247D17C24BE04E30007FC65 /* PostViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E247D17B24BE04E30007FC65 /* PostViewController.storyboard */; };
 		E247D18324BE074D0007FC65 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D18124BE074D0007FC65 /* PostCell.swift */; };
 		E247D18424BE074D0007FC65 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E247D18224BE074D0007FC65 /* PostCell.xib */; };
-		E247D18624BEAD7A0007FC65 /* LatestPostDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D18524BEAD7A0007FC65 /* LatestPostDataSource.swift */; };
+		E247D18624BEAD7A0007FC65 /* PostDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D18524BEAD7A0007FC65 /* PostDataSource.swift */; };
 		E247D18924BEAF2B0007FC65 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D18824BEAF2B0007FC65 /* UIViewController+.swift */; };
 		E247D19324BF22400007FC65 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D19224BF22400007FC65 /* UITableView+.swift */; };
 		E247D19524BF25CC0007FC65 /* Foundation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D19424BF25CC0007FC65 /* Foundation+.swift */; };
@@ -120,11 +120,11 @@
 		B420D3927773AC66385326C7 /* QiitaCheckerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = QiitaCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA56720F51F079039C989D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8A67FC519791420B7F50B61 /* Pods-QiitaChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker.debug.xcconfig"; path = "Target Support Files/Pods-QiitaChecker/Pods-QiitaChecker.debug.xcconfig"; sourceTree = "<group>"; };
-		E247D17924BE04CB0007FC65 /* LatestPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPostViewController.swift; sourceTree = "<group>"; };
-		E247D17B24BE04E30007FC65 /* LatestPostViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LatestPostViewController.storyboard; sourceTree = "<group>"; };
+		E247D17924BE04CB0007FC65 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		E247D17B24BE04E30007FC65 /* PostViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostViewController.storyboard; sourceTree = "<group>"; };
 		E247D18124BE074D0007FC65 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		E247D18224BE074D0007FC65 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
-		E247D18524BEAD7A0007FC65 /* LatestPostDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestPostDataSource.swift; sourceTree = "<group>"; };
+		E247D18524BEAD7A0007FC65 /* PostDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataSource.swift; sourceTree = "<group>"; };
 		E247D18824BEAF2B0007FC65 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		E247D19224BF22400007FC65 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		E247D19424BF25CC0007FC65 /* Foundation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+.swift"; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				1194FC15075C6FD70ADE340B /* LaunchScreen.storyboard */,
-				E247D17E24BE06470007FC65 /* LatestPost */,
+				E247D17E24BE06470007FC65 /* Post */,
 				E247D17D24BE062A0007FC65 /* Home */,
 			);
 			path = View;
@@ -296,16 +296,16 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		E247D17E24BE06470007FC65 /* LatestPost */ = {
+		E247D17E24BE06470007FC65 /* Post */ = {
 			isa = PBXGroup;
 			children = (
-				E247D17924BE04CB0007FC65 /* LatestPostViewController.swift */,
-				E247D18524BEAD7A0007FC65 /* LatestPostDataSource.swift */,
+				E247D17924BE04CB0007FC65 /* PostViewController.swift */,
+				E247D18524BEAD7A0007FC65 /* PostDataSource.swift */,
 				E247D18124BE074D0007FC65 /* PostCell.swift */,
-				E247D17B24BE04E30007FC65 /* LatestPostViewController.storyboard */,
+				E247D17B24BE04E30007FC65 /* PostViewController.storyboard */,
 				E247D18224BE074D0007FC65 /* PostCell.xib */,
 			);
-			path = LatestPost;
+			path = Post;
 			sourceTree = "<group>";
 		};
 		E247D18724BEAF080007FC65 /* Extension */ = {
@@ -428,7 +428,7 @@
 				BFC866B8F9D84A2543CE6D9D /* Home.storyboard in Resources */,
 				E247D18424BE074D0007FC65 /* PostCell.xib in Resources */,
 				0A512980744ED0F811274FD9 /* LaunchScreen.storyboard in Resources */,
-				E247D17C24BE04E30007FC65 /* LatestPostViewController.storyboard in Resources */,
+				E247D17C24BE04E30007FC65 /* PostViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,8 +576,8 @@
 				617BDE4C893CFA641B4C63BB /* AppDelegate.swift in Sources */,
 				785A5D47D3EC13E5A339D9E4 /* HomeViewController.swift in Sources */,
 				B0BA4AD5E16E02F42D837B06 /* SceneDelegate.swift in Sources */,
-				E247D18624BEAD7A0007FC65 /* LatestPostDataSource.swift in Sources */,
-				E247D17A24BE04CB0007FC65 /* LatestPostViewController.swift in Sources */,
+				E247D18624BEAD7A0007FC65 /* PostDataSource.swift in Sources */,
+				E247D17A24BE04CB0007FC65 /* PostViewController.swift in Sources */,
 				E247D18324BE074D0007FC65 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
