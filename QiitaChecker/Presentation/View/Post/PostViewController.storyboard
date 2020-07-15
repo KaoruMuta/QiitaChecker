@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Latest Post View Controller-->
+        <!--Post View Controller-->
         <scene sceneID="27i-SP-LRI">
             <objects>
-                <viewController storyboardIdentifier="LatestPostViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aDO-zZ-LJ8" customClass="LatestPostViewController" customModule="QiitaChecker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PostViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aDO-zZ-LJ8" customClass="PostViewController" customModule="QiitaChecker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="15h-9Z-Hew">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
