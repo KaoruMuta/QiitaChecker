@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
     }
     
     private func configurePaging() {
-        let viewController = PostViewController.instantiate()
+        let viewController = PostViewController.instantiate(viewModel: PostViewModel(useCase: DependencyManager.postUseCase))
         pageContents.append(viewController)
         
         let pagingViewController = PagingViewController(viewControllers: pageContents)

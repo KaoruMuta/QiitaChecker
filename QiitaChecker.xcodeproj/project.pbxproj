@@ -39,6 +39,19 @@
 		E247D18924BEAF2B0007FC65 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D18824BEAF2B0007FC65 /* UIViewController+.swift */; };
 		E247D19324BF22400007FC65 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D19224BF22400007FC65 /* UITableView+.swift */; };
 		E247D19524BF25CC0007FC65 /* Foundation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D19424BF25CC0007FC65 /* Foundation+.swift */; };
+		E247D19B24BF31880007FC65 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D19A24BF31880007FC65 /* PostViewModel.swift */; };
+		E247D19F24BF326F0007FC65 /* PostUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D19E24BF326F0007FC65 /* PostUseCase.swift */; };
+		E247D1A224BF33460007FC65 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1A124BF33460007FC65 /* PostRepository.swift */; };
+		E247D1A424BF36AD0007FC65 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1A324BF36AD0007FC65 /* DependencyManager.swift */; };
+		E247D1A724BF3DCA0007FC65 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1A624BF3DCA0007FC65 /* Post.swift */; };
+		E247D1B924C20A150007FC65 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1B824C20A150007FC65 /* APIConstants.swift */; };
+		E247D1C424C6DC600007FC65 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1C324C6DC600007FC65 /* ItemRequest.swift */; };
+		E247D1C624C6E0330007FC65 /* ItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1C524C6E0330007FC65 /* ItemResponse.swift */; };
+		E247D1C824C6E3CB0007FC65 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1C724C6E3CB0007FC65 /* BaseRequest.swift */; };
+		E247D1CA24C6E43F0007FC65 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1C924C6E43F0007FC65 /* BaseAPI.swift */; };
+		E247D1CC24C6E5B60007FC65 /* JSONDecoder+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1CB24C6E5B60007FC65 /* JSONDecoder+.swift */; };
+		E247D1CE24C6E6710007FC65 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1CD24C6E6710007FC65 /* APIClient.swift */; };
+		E247D1D024C6E6D60007FC65 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1CF24C6E6D60007FC65 /* APIResult.swift */; };
 		E69A599072C1D1F172E3C3D5 /* Floaty.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 475C9A6CDC03D889959666C7 /* Floaty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5B3EA6FC0F8A83DC9CBAC46 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A869B46A63677873A812B /* RxRelay.framework */; };
 		FC72F3C3953854637D1C136F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86824AA9B901163818F3106B /* Alamofire.framework */; };
@@ -128,6 +141,19 @@
 		E247D18824BEAF2B0007FC65 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		E247D19224BF22400007FC65 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		E247D19424BF25CC0007FC65 /* Foundation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+.swift"; sourceTree = "<group>"; };
+		E247D19A24BF31880007FC65 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		E247D19E24BF326F0007FC65 /* PostUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUseCase.swift; sourceTree = "<group>"; };
+		E247D1A124BF33460007FC65 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
+		E247D1A324BF36AD0007FC65 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		E247D1A624BF3DCA0007FC65 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E247D1B824C20A150007FC65 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		E247D1C324C6DC600007FC65 /* ItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
+		E247D1C524C6E0330007FC65 /* ItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemResponse.swift; sourceTree = "<group>"; };
+		E247D1C724C6E3CB0007FC65 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		E247D1C924C6E43F0007FC65 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		E247D1CB24C6E5B60007FC65 /* JSONDecoder+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+.swift"; sourceTree = "<group>"; };
+		E247D1CD24C6E6710007FC65 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E247D1CF24C6E6D60007FC65 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
 		E7959E387B71D5F104D73C7D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		E838037A0C5E8DF16E0A5225 /* Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig"; path = "Target Support Files/Pods-QiitaChecker-QiitaCheckerUITests/Pods-QiitaChecker-QiitaCheckerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +195,8 @@
 		10D7187D521A27B76209D94D /* QiitaChecker */ = {
 			isa = PBXGroup;
 			children = (
+				E247D1A824BF4EF80007FC65 /* Data */,
+				E247D19C24BF32500007FC65 /* Domain */,
 				64E74184D95DBA619CA3BEEF /* Common */,
 				784ADC260AF0BDFDD147FB29 /* Presentation */,
 			);
@@ -240,6 +268,8 @@
 		784ADC260AF0BDFDD147FB29 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				E247D1A324BF36AD0007FC65 /* DependencyManager.swift */,
+				E247D19924BF317B0007FC65 /* ViewModel */,
 				20ED43BAD9FDF578E0A41138 /* View */,
 			);
 			path = Presentation;
@@ -314,8 +344,73 @@
 				E247D18824BEAF2B0007FC65 /* UIViewController+.swift */,
 				E247D19224BF22400007FC65 /* UITableView+.swift */,
 				E247D19424BF25CC0007FC65 /* Foundation+.swift */,
+				E247D1CB24C6E5B60007FC65 /* JSONDecoder+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E247D19924BF317B0007FC65 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E247D19A24BF31880007FC65 /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E247D19C24BF32500007FC65 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E247D1A524BF3DC00007FC65 /* Model */,
+				E247D1A024BF33380007FC65 /* Repository */,
+				E247D19D24BF325E0007FC65 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E247D19D24BF325E0007FC65 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				E247D19E24BF326F0007FC65 /* PostUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		E247D1A024BF33380007FC65 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E247D1A124BF33460007FC65 /* PostRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E247D1A524BF3DC00007FC65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E247D1A624BF3DCA0007FC65 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E247D1A824BF4EF80007FC65 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E247D1BA24C20AFE0007FC65 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E247D1BA24C20AFE0007FC65 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E247D1B824C20A150007FC65 /* APIConstants.swift */,
+				E247D1C324C6DC600007FC65 /* ItemRequest.swift */,
+				E247D1C524C6E0330007FC65 /* ItemResponse.swift */,
+				E247D1C724C6E3CB0007FC65 /* BaseRequest.swift */,
+				E247D1C924C6E43F0007FC65 /* BaseAPI.swift */,
+				E247D1CD24C6E6710007FC65 /* APIClient.swift */,
+				E247D1CF24C6E6D60007FC65 /* APIResult.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,14 +665,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E247D19B24BF31880007FC65 /* PostViewModel.swift in Sources */,
+				E247D1A224BF33460007FC65 /* PostRepository.swift in Sources */,
 				E247D18924BEAF2B0007FC65 /* UIViewController+.swift in Sources */,
+				E247D1C824C6E3CB0007FC65 /* BaseRequest.swift in Sources */,
+				E247D1CE24C6E6710007FC65 /* APIClient.swift in Sources */,
+				E247D1CC24C6E5B60007FC65 /* JSONDecoder+.swift in Sources */,
 				E247D19524BF25CC0007FC65 /* Foundation+.swift in Sources */,
 				E247D19324BF22400007FC65 /* UITableView+.swift in Sources */,
+				E247D1A724BF3DCA0007FC65 /* Post.swift in Sources */,
+				E247D1C424C6DC600007FC65 /* ItemRequest.swift in Sources */,
+				E247D1CA24C6E43F0007FC65 /* BaseAPI.swift in Sources */,
 				617BDE4C893CFA641B4C63BB /* AppDelegate.swift in Sources */,
 				785A5D47D3EC13E5A339D9E4 /* HomeViewController.swift in Sources */,
+				E247D19F24BF326F0007FC65 /* PostUseCase.swift in Sources */,
+				E247D1C624C6E0330007FC65 /* ItemResponse.swift in Sources */,
 				B0BA4AD5E16E02F42D837B06 /* SceneDelegate.swift in Sources */,
 				E247D18624BEAD7A0007FC65 /* PostDataSource.swift in Sources */,
+				E247D1B924C20A150007FC65 /* APIConstants.swift in Sources */,
+				E247D1D024C6E6D60007FC65 /* APIResult.swift in Sources */,
 				E247D17A24BE04CB0007FC65 /* PostViewController.swift in Sources */,
+				E247D1A424BF36AD0007FC65 /* DependencyManager.swift in Sources */,
 				E247D18324BE074D0007FC65 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

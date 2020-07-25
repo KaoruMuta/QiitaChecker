@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class PostViewController: UIViewController {
     
     @IBOutlet private weak var postListView: UITableView!
+    
+    private var viewModel: PostViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +22,21 @@ class PostViewController: UIViewController {
         configure()
     }
     
+    static func instantiate(viewModel: PostViewModel) -> UIViewController {
+        let viewController = PostViewController.instantiate()
+        viewController.viewModel = viewModel
+        return viewController
+    }
+    
     private func configure() {
         postListView.register(cellType: PostCell.self)
         postListView.delegate = self
         postListView.dataSource = self
+        bind()
+    }
+    
+    private func bind() {
+        viewModel?.fetchArticles()
     }
 }
 
