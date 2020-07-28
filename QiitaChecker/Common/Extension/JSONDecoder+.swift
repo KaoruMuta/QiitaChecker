@@ -6,12 +6,12 @@
 //
 
 import UIKit
-
-extension JSONDecoder {
-    convenience init(type: JSONDecoder.KeyDecodingStrategy) {
-        self.init()
-        self.keyDecodingStrategy = type
-    }
-    
-    static let decoder = JSONDecoder(type: .convertFromSnakeCase)
-}
+//
+//extension JSONDecoder {
+//    convenience init(type: JSONDecoder.KeyDecodingStrategy) {
+//        self.init()
+//        self.keyDecodingStrategy = type
+//    }
+//    
+//    static let decoder = JSONDecoder(type: .convertFromSnakeCase)
+//}

@@ -8,11 +8,11 @@
 import RxSwift
 
 protocol PostRepository {
-    func fetchArticles() -> Single<ItemResponse>
+    func fetchArticles() -> Single<[ItemResponse]>
 }
 
 struct PostRepositoryImpl: PostRepository {
-    func fetchArticles() -> Single<ItemResponse> {
+    func fetchArticles() -> Single<[ItemResponse]> {
         return APIClient.send(request: ItemRequest.get)
     }
 }

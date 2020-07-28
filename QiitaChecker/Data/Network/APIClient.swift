@@ -13,7 +13,7 @@ struct APIClient {
     private static let successRange = 200 ..< 300
     private static let contentType = ["application/json"]
     
-    static func call<T, V>(_ request: T, _ disposeBag: DisposeBag, onSuccess: @escaping (V) -> Void, onError: @escaping (Error) -> Void) where T: BaseRequest, V: Codable, T.Response == V {
+    static func call<T, V>(_ request: T, _ disposeBag: DisposeBag, onSuccess: @escaping ([V]) -> Void, onError: @escaping (Error) -> Void) where T: BaseRequest, V: Codable, T.Response == V {
         _ = send(request: request)
             .observeOn(MainScheduler.instance)
             .subscribe(
@@ -26,12 +26,12 @@ struct APIClient {
             .disposed(by: disposeBag)
     }
 
-    static func send<T, V>(request: T) -> Single<T.Response> where T: BaseRequest, V: Codable, T.Response == V {
-        return Single<T.Response>.create { observer in
+    static func send<T, V>(request: T) -> Single<[T.Response]> where T: BaseRequest, V: Codable, T.Response == V {
+        return Single<[T.Response]>.create { observer in
             let calling = callForData(request) { response in
                 switch response {
                 case .success(let result):
-                    observer(.success(result as! V))
+                    observer(.success(result as! [V]))
                 case .failure(let error):
                     observer(.error(error))
                 }
@@ -48,9 +48,7 @@ struct APIClient {
                 switch response.result {
                 case .success:
                     guard let data = response.data else { return }
-                    let test = try? JSONDecoder.decoder.decode(V.self, from: data)
-                    print(test)
-                    guard let decodedData = try? JSONDecoder.decoder.decode(V.self, from: data) else { return }
+                    guard let decodedData = try? JSONDecoder().decode([V].self, from: data) else { return }
                     completion(.success(decodedData))
                 case .failure(let error):
                     completion(.failure(error))

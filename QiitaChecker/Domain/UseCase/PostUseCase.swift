@@ -8,7 +8,7 @@
 import RxSwift
 
 protocol PostUseCase {
-    func fetchArticles() -> Single<ItemResponse>
+    func fetchArticles() -> Single<[ItemResponse]>
 }
 
 class PostUseCaseImpl: PostUseCase {
@@ -19,7 +19,7 @@ class PostUseCaseImpl: PostUseCase {
         self.repository = repository
     }
     
-    func fetchArticles() -> Single<ItemResponse> {
+    func fetchArticles() -> Single<[ItemResponse]> {
         repository.fetchArticles()
     }
 }

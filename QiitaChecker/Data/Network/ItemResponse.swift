@@ -9,13 +9,13 @@ import UIKit
 import Alamofire
 
 struct ItemResponse: Codable {
-    let user: [User]?
+    let user: User
     let title: String?
     let createdTime: String?
     
     enum CodingKeys: String, CodingKey {
-        case user = "user"
-        case title = "title"
+        case user
+        case title
         case createdTime = "created_at"
     }
 }
@@ -25,10 +25,5 @@ struct User: Codable {
     
     enum CodingKeys: String, CodingKey {
         case profileImageUrl = "profile_image_url"
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        profileImageUrl = try container.decode(String.self, forKey: .profileImageUrl)
     }
 }
