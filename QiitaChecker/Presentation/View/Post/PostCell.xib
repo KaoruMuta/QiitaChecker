@@ -53,8 +53,8 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="date" destination="XpC-wM-J0F" id="9eF-6a-sgq"/>
                 <outlet property="icon" destination="ARt-t6-EZl" id="QCg-lu-Pqo"/>
+                <outlet property="lgtmCount" destination="XpC-wM-J0F" id="Vwe-6P-kQ6"/>
                 <outlet property="title" destination="BEk-Vw-g8H" id="FhB-Ut-p5m"/>
             </connections>
             <point key="canvasLocation" x="264.49275362318843" y="262.5"/>

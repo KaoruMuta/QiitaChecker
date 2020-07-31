@@ -12,7 +12,7 @@ class PostCell: UITableViewCell {
     
     @IBOutlet private weak var icon: UIImageView!
     @IBOutlet private weak var title: UILabel!
-    @IBOutlet private weak var date: UILabel!
+    @IBOutlet private weak var lgtmCount: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +31,6 @@ extension PostCell {
     func configure(with postItem: Post) {
         Nuke.loadImage(with: postItem.url, into: icon)
         title.text = postItem.title
-        date.text = postItem.date
+        lgtmCount.text = postItem.lgtmCount
     }
 }

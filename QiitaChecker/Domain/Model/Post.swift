@@ -9,6 +9,6 @@ import UIKit
 
 struct Post {
     let title: String
-    let date: String
+    let lgtmCount: String
     let url: URL
 }

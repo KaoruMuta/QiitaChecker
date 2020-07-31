@@ -387,7 +387,6 @@
 				1A72B6F42E73C1A399254D83 /* Pods-QiitaCheckerTests.debug.xcconfig */,
 				C89EBF52DF1FF9DD62193559 /* Pods-QiitaCheckerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -524,6 +523,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = 50D025BA0CEA0470C4F69080;

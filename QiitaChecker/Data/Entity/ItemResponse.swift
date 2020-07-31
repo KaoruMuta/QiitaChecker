@@ -10,13 +10,13 @@ import Alamofire
 
 struct ItemResponse: Codable {
     let user: User
+    let likesCount: Int?
     let title: String?
-    let createdTime: String?
     
     enum CodingKeys: String, CodingKey {
         case user
+        case likesCount = "likes_count"
         case title
-        case createdTime = "created_at"
     }
 }
 
