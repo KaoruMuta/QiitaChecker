@@ -47,6 +47,7 @@ final class PostViewController: UIViewController {
         
         postListView.rx.itemSelected
             .subscribe(onNext: { [weak self] indexPath in
+                self?.postListView.deselectRow(at: indexPath, animated: true)
                 guard let postItem = self?.viewModel?.postItems.value[indexPath.row] else { return }
                 let safariViewController = SafariViewController(url: postItem.articleUrl)
                 self?.present(safariViewController, animated: true)
