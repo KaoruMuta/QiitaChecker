@@ -19,35 +19,15 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configure()
         configurePaging()
         configureFAB()
     }
     
-    private func configurePaging() {
-        let viewController = PostViewController.instantiate(viewModel: PostViewModel(useCase: DependencyManager.postUseCase))
-        pageContents.append(viewController)
+    private func configure() {
+        navigationController?.navigationBar.isTranslucent = false
         
-        let pagingViewController = PagingViewController(viewControllers: pageContents)
-        addChild(pagingViewController)
-        view.addSubview(pagingViewController.view)
-        pagingViewController.didMove(toParent: self)
-        pagingViewController.view.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([
-            pagingViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            pagingViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            pagingViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            pagingViewController.view.topAnchor.constraint(equalTo: view.topAnchor)
-        ])
-        
-        pagingViewController.dataSource = self
     }
-    
-    private func configureFAB() {
-        let floatingActionButton = Floaty()
-        view.addSubview(floatingActionButton)
-    }
-
 }
 
 extension HomeViewController: HomeView {}
@@ -63,5 +43,39 @@ extension HomeViewController: PagingViewControllerDataSource {
     
     func pagingViewController(_: PagingViewController, pagingItemAt index: Int) -> PagingItem {
         return PagingIndexItem(index: index, title: pageTitles[index])
+    }
+}
+
+private extension HomeViewController {
+    private func configurePaging() {
+        let viewController = PostViewController.instantiate(viewModel: PostViewModel(useCase: DependencyManager.postUseCase))
+        pageContents.append(viewController)
+        
+        let pagingViewController = PagingViewController(viewControllers: pageContents)
+        pagingViewController.selectedTextColor = .constant(.qiita)
+        pagingViewController.indicatorColor = .constant(.qiita)
+        addChild(pagingViewController)
+        view.addSubview(pagingViewController.view)
+        pagingViewController.didMove(toParent: self)
+        pagingViewController.view.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            pagingViewController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            pagingViewController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            pagingViewController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            pagingViewController.view.topAnchor.constraint(equalTo: view.topAnchor)
+        ])
+        
+        pagingViewController.dataSource = self
+        
+    }
+}
+
+private extension HomeViewController {
+    private func configureFAB() {
+        let floatingActionButton = Floaty()
+        floatingActionButton.buttonColor = .constant(.qiita)
+        floatingActionButton.plusColor = .white
+        view.addSubview(floatingActionButton)
     }
 }
