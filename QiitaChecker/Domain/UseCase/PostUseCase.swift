@@ -23,7 +23,6 @@ class PostUseCaseImpl: PostUseCase {
     
     func fetchArticles() -> Single<[Post]> {
         repository.fetchArticles().map({ [unowned self] entity -> [Post] in
-            print(entity)
             return self.translator.translate(from: entity)
         })
     }

@@ -30,28 +30,10 @@ class PostViewController: UIViewController {
     }
     
     private func configure() {
-//        postListView.delegate = self
+        postListView.delegate = self
         postListView.register(cellType: PostCell.self)
         viewModel?.fetchArticles()
         
-        viewModel?.postItems
-            .asObservable()
-            .subscribe({ post in
-                print(post)
-                print("Yes")
-            })
-        .disposed(by: disposeBag)
-        
-        // FIXME: crashed
-//        viewModel?.postItems
-//            .asDriver()
-//            .drive(postListView.rx.items) { (tableView, row, item) in
-//                let cell = tableView.dequeueReusableCell(with: PostCell.self)
-//                cell.configure(with: item)
-//                return cell
-//        }
-//        .disposed(by: disposeBag)
-//
         viewModel?.postItems
             .bind(to: postListView.rx.items) { (tableView, row, item) in
                 let cell = tableView.dequeueReusableCell(with: PostCell.self)
@@ -65,8 +47,8 @@ class PostViewController: UIViewController {
 
 extension PostViewController: StoryboardInstantiatable {}
 
-//extension PostViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 80
-//    }
-//}
+extension PostViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+}

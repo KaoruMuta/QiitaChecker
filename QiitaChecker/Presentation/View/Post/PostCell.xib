@@ -23,8 +23,8 @@
                             <constraint firstAttribute="height" constant="70" id="qMk-hG-odB"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEk-Vw-g8H">
-                        <rect key="frame" x="129" y="5" width="200" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEk-Vw-g8H">
+                        <rect key="frame" x="129" y="5" width="200" height="0.0"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="200" id="cnZ-8C-EeQ"/>
                         </constraints>
@@ -32,8 +32,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpC-wM-J0F">
-                        <rect key="frame" x="129" y="54" width="200" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpC-wM-J0F">
+                        <rect key="frame" x="129" y="75" width="200" height="0.0"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="200" id="tGT-ha-8UK"/>
                         </constraints>
@@ -53,9 +53,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="dateText" destination="XpC-wM-J0F" id="AIE-Yz-Vx8"/>
-                <outlet property="iconImageView" destination="ARt-t6-EZl" id="21M-GI-NLu"/>
-                <outlet property="titleText" destination="BEk-Vw-g8H" id="wXB-7O-u5O"/>
+                <outlet property="date" destination="XpC-wM-J0F" id="9eF-6a-sgq"/>
+                <outlet property="icon" destination="ARt-t6-EZl" id="QCg-lu-Pqo"/>
+                <outlet property="title" destination="BEk-Vw-g8H" id="FhB-Ut-p5m"/>
             </connections>
             <point key="canvasLocation" x="264.49275362318843" y="262.5"/>
         </tableViewCell>
