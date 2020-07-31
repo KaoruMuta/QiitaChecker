@@ -14,7 +14,7 @@ protocol HomeView {}
 final class HomeViewController: UIViewController {
     
     private var pageContents: [UIViewController] = []
-    private var pageTitles = ["最新の投稿"]
+    private var pageTitles = [L10n.latestPost]
 
     override func viewDidLoad() {
         super.viewDidLoad()

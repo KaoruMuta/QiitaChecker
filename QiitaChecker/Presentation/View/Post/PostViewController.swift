@@ -33,7 +33,10 @@ final class PostViewController: UIViewController {
         postListView.delegate = self
         postListView.register(cellType: PostCell.self)
         viewModel?.fetchArticles()
-        
+        bind()
+    }
+    
+    private func bind() {
         viewModel?.postItems
             .bind(to: postListView.rx.items) { (tableView, row, item) in
                 let cell = tableView.dequeueReusableCell(with: PostCell.self)
@@ -41,6 +44,14 @@ final class PostViewController: UIViewController {
                 return cell
         }
         .disposed(by: disposeBag)
+        
+        postListView.rx.itemSelected
+            .subscribe(onNext: { [weak self] indexPath in
+                guard let postItem = self?.viewModel?.postItems.value[indexPath.row] else { return }
+                let safariViewController = SafariViewController(url: postItem.articleUrl)
+                self?.present(safariViewController, animated: true)
+            })
+            .disposed(by: disposeBag)
     }
     
 }

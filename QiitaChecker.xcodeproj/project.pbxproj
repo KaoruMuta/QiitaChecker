@@ -49,6 +49,12 @@
 		CC2D928EE5A96FE27097AFD4 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA237E2A9A14CD6FBA7130D /* APIResult.swift */; };
 		D2AE909DF71FB1308D92BC7C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A16BB4942C80C99EC21523 /* PostViewController.swift */; };
 		DAF53656776732D22020648A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86824AA9B901163818F3106B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E247D1DF24D478E60007FC65 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1DE24D478E60007FC65 /* SafariViewController.swift */; };
+		E247D1E124D479AD0007FC65 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1E024D479AD0007FC65 /* UIColor+.swift */; };
+		E247D1E424D47C8F0007FC65 /* Colors.txt in Resources */ = {isa = PBXBuildFile; fileRef = E247D1E224D47C8F0007FC65 /* Colors.txt */; };
+		E247D1E524D47C8F0007FC65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E247D1E324D47C8F0007FC65 /* Localizable.strings */; };
+		E247D1E924D47F590007FC65 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1E724D47F590007FC65 /* Strings.swift */; };
+		E247D1EA24D47F590007FC65 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1E824D47F590007FC65 /* Colors.swift */; };
 		E633D8382B362E3AA8863854 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE09D2D028D6764FEBA535 /* UIViewController+.swift */; };
 		E69A599072C1D1F172E3C3D5 /* Floaty.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 475C9A6CDC03D889959666C7 /* Floaty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E94EB7488D846B705A5D627F /* PostTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2DEB227B5C3C59A6991B22 /* PostTranslator.swift */; };
@@ -153,6 +159,12 @@
 		D36951F2B4D95AF7E4C80EEE /* ItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
 		D7B6D1CE441F831F96A3756A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		DF7C5EA5432CF3F5B6EA6186 /* Foundation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+.swift"; sourceTree = "<group>"; };
+		E247D1DE24D478E60007FC65 /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
+		E247D1E024D479AD0007FC65 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		E247D1E224D47C8F0007FC65 /* Colors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
+		E247D1E324D47C8F0007FC65 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E247D1E724D47F590007FC65 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		E247D1E824D47F590007FC65 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E27D86423177B0A335033AD3 /* Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; path = "Target Support Files/Pods-QiitaChecker-QiitaCheckerUITests/Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E4A16BB4942C80C99EC21523 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		E7959E387B71D5F104D73C7D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
@@ -212,6 +224,7 @@
 				DF7C5EA5432CF3F5B6EA6186 /* Foundation+.swift */,
 				A28A9D6FC07B8311771E19CE /* UITableView+.swift */,
 				65DE09D2D028D6764FEBA535 /* UIViewController+.swift */,
+				E247D1E024D479AD0007FC65 /* UIColor+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -244,6 +257,7 @@
 		20ED43BAD9FDF578E0A41138 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E247D1DD24D478DA0007FC65 /* Web */,
 				5056C4844F2C4F6CC40C3A2C /* LaunchScreen.storyboard */,
 				05E25C464A75D058A80B6D5D /* Home */,
 				7B134B9A780F659BE195097C /* Post */,
@@ -368,6 +382,9 @@
 		AF207E6F1F92282A5D79CF46 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				E247D1E624D47F590007FC65 /* Generated */,
+				E247D1E224D47C8F0007FC65 /* Colors.txt */,
+				E247D1E324D47C8F0007FC65 /* Localizable.strings */,
 				CDA56720F51F079039C989D0 /* Assets.xcassets */,
 				299C80B248FBDF6FBD1289F4 /* Info.plist */,
 			);
@@ -403,6 +420,23 @@
 				2A893E855F0C14014825408E /* UseCase */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		E247D1DD24D478DA0007FC65 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				E247D1DE24D478E60007FC65 /* SafariViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		E247D1E624D47F590007FC65 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				E247D1E724D47F590007FC65 /* Strings.swift */,
+				E247D1E824D47F590007FC65 /* Colors.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		EEAAAACA1A58E413DD2A1503 /* Model */ = {
@@ -542,6 +576,8 @@
 			files = (
 				5B5B2494EF4E23029BD49CA8 /* Assets.xcassets in Resources */,
 				7EF87858232CE4DE5D096D75 /* Home.storyboard in Resources */,
+				E247D1E424D47C8F0007FC65 /* Colors.txt in Resources */,
+				E247D1E524D47C8F0007FC65 /* Localizable.strings in Resources */,
 				EC38B41E5D7FBDA277E4B64A /* LaunchScreen.storyboard in Resources */,
 				38DEF39F0BCBF1F8A6D7C930 /* PostCell.xib in Resources */,
 				0BCB2763164BA9908D62BCEB /* PostViewController.storyboard in Resources */,
@@ -694,16 +730,20 @@
 				617BDE4C893CFA641B4C63BB /* AppDelegate.swift in Sources */,
 				24F5068EDC9AA2F59CE82D86 /* BaseAPI.swift in Sources */,
 				8CB19CCF8EAFC754F15189C4 /* BaseRequest.swift in Sources */,
+				E247D1EA24D47F590007FC65 /* Colors.swift in Sources */,
 				07CC726AAE616E89D500F73B /* DependencyManager.swift in Sources */,
 				A0F61286DC17536592D70617 /* Foundation+.swift in Sources */,
 				940BAC5482F1C094C62B6ED9 /* HomeViewController.swift in Sources */,
 				8B3BCC8B8368D1FE32C71DBA /* ItemRequest.swift in Sources */,
+				E247D1E924D47F590007FC65 /* Strings.swift in Sources */,
 				8F7AB9AE3536EEB8D9E9FE4C /* ItemResponse.swift in Sources */,
 				A8EF69AD157AF4EECF3EEC15 /* Post.swift in Sources */,
 				927C614FDF45F860308FAEBC /* PostCell.swift in Sources */,
 				19A2810E5D4498332C3C8D03 /* PostRepository.swift in Sources */,
 				E94EB7488D846B705A5D627F /* PostTranslator.swift in Sources */,
 				5B484C15DEEC69E662DCAAE0 /* PostUseCase.swift in Sources */,
+				E247D1DF24D478E60007FC65 /* SafariViewController.swift in Sources */,
+				E247D1E124D479AD0007FC65 /* UIColor+.swift in Sources */,
 				D2AE909DF71FB1308D92BC7C /* PostViewController.swift in Sources */,
 				7EE9E95417101C35AD41950C /* PostViewModel.swift in Sources */,
 				B0BA4AD5E16E02F42D837B06 /* SceneDelegate.swift in Sources */,

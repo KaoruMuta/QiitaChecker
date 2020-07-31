@@ -1,5 +1,5 @@
 .PHONY: all
-all: bundle_install_force xcodegen pods_force carthage_if_needed;
+all: bundle_install_force xcodegen pods_force carthage_if_needed resources;
 
 .PHONY: clean
 clean: pods_cache_clear carthage_cache_clear carthage_derived_data_clear;
@@ -64,3 +64,7 @@ carthage_derived_data_clear:
 .PHONY: carthage_version_clear
 carthage_version_clear:
 	rm Cartfile.resolved
+
+.PHONY: resources
+resources:
+	./Pods/SwiftGen/bin/swiftgen

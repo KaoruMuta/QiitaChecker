@@ -1,0 +1,10 @@
+strings:
+  inputs: ./QiitaChecker/Common/Resource/Localizable.strings
+  outputs:
+    templateName: structured-swift4
+    output: ./QiitaChecker/Common/Resource/Generated/Strings.swift
+
+colors:
+  paths: ./QiitaChecker/Common/Resource/Colors.txt
+  templateName: swift4
+  output: ./QiitaChecker/Common/Resource/Generated/Colors.swift

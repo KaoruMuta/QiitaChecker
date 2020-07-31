@@ -10,5 +10,6 @@ import UIKit
 struct Post {
     let title: String
     let lgtmCount: String
-    let url: URL
+    let articleUrl: URL
+    let profileImageurl: URL
 }

@@ -29,7 +29,7 @@ final class PostCell: UITableViewCell {
 
 extension PostCell {
     func configure(with postItem: Post) {
-        Nuke.loadImage(with: postItem.url, into: icon)
+        Nuke.loadImage(with: postItem.profileImageurl, into: icon)
         title.text = postItem.title
         lgtmCount.text = postItem.lgtmCount
     }
