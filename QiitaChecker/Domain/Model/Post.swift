@@ -8,8 +8,7 @@
 import UIKit
 
 struct Post {
-    let icon: UIImage
     let title: String
     let date: String
-    let url: String
+    let url: URL
 }

@@ -8,18 +8,23 @@
 import RxSwift
 
 protocol PostUseCase {
-    func fetchArticles() -> Single<[ItemResponse]>
+    func fetchArticles() -> Single<[Post]>
 }
 
 class PostUseCaseImpl: PostUseCase {
     
     private let repository: PostRepository
+    private let translator: PostTranslator
     
-    init(repository: PostRepository) {
+    init(repository: PostRepository, translator: PostTranslator) {
         self.repository = repository
+        self.translator = translator
     }
     
-    func fetchArticles() -> Single<[ItemResponse]> {
-        repository.fetchArticles()
+    func fetchArticles() -> Single<[Post]> {
+        repository.fetchArticles().map({ [unowned self] entity -> [Post] in
+            print(entity)
+            return self.translator.translate(from: entity)
+        })
     }
 }
