@@ -8,7 +8,7 @@
 import UIKit
 import Nuke
 
-class PostCell: UITableViewCell {
+final class PostCell: UITableViewCell {
     
     @IBOutlet private weak var icon: UIImageView!
     @IBOutlet private weak var title: UILabel!

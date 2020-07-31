@@ -8,7 +8,7 @@
 import RxSwift
 import RxCocoa
 
-class PostViewModel {
+final class PostViewModel {
     
     private let useCase: PostUseCase
     

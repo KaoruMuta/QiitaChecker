@@ -11,8 +11,7 @@ import Floaty
 
 protocol HomeView {}
 
-// TODO: indicate each viewcontroller per contents in qiita
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
     
     private var pageContents: [UIViewController] = []
     private var pageTitles = ["最新の投稿"]

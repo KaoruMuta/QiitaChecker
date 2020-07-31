@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class PostViewController: UIViewController {
+final class PostViewController: UIViewController {
     
     @IBOutlet private weak var postListView: UITableView!
     

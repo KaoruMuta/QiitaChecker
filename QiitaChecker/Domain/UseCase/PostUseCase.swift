@@ -11,7 +11,7 @@ protocol PostUseCase {
     func fetchArticles() -> Single<[Post]>
 }
 
-class PostUseCaseImpl: PostUseCase {
+final class PostUseCaseImpl: PostUseCase {
     
     private let repository: PostRepository
     private let translator: PostTranslator

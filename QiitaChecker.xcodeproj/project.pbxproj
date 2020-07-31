@@ -49,7 +49,6 @@
 		CC2D928EE5A96FE27097AFD4 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA237E2A9A14CD6FBA7130D /* APIResult.swift */; };
 		D2AE909DF71FB1308D92BC7C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A16BB4942C80C99EC21523 /* PostViewController.swift */; };
 		DAF53656776732D22020648A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86824AA9B901163818F3106B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E34DED90A117A3C5DD2BC495 /* PostDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7FAA6EEEF918F198A25164 /* PostDataSource.swift */; };
 		E633D8382B362E3AA8863854 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE09D2D028D6764FEBA535 /* UIViewController+.swift */; };
 		E69A599072C1D1F172E3C3D5 /* Floaty.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 475C9A6CDC03D889959666C7 /* Floaty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E94EB7488D846B705A5D627F /* PostTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2DEB227B5C3C59A6991B22 /* PostTranslator.swift */; };
@@ -123,7 +122,6 @@
 		1F20D224C495CF4867DE949A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
 		299C80B248FBDF6FBD1289F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C2DEB227B5C3C59A6991B22 /* PostTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTranslator.swift; sourceTree = "<group>"; };
-		3C7FAA6EEEF918F198A25164 /* PostDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataSource.swift; sourceTree = "<group>"; };
 		400BE335045A06B2DD9721B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		475C9A6CDC03D889959666C7 /* Floaty.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Floaty.framework; sourceTree = "<group>"; };
 		4B9B7D9907194F1E8D687B90 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -325,9 +323,8 @@
 			children = (
 				4B9B7D9907194F1E8D687B90 /* PostCell.swift */,
 				ED67B53E086D96C774519E08 /* PostCell.xib */,
-				3C7FAA6EEEF918F198A25164 /* PostDataSource.swift */,
-				9AB01C1B6C74A3816457B287 /* PostViewController.storyboard */,
 				E4A16BB4942C80C99EC21523 /* PostViewController.swift */,
+				9AB01C1B6C74A3816457B287 /* PostViewController.storyboard */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -704,7 +701,6 @@
 				8F7AB9AE3536EEB8D9E9FE4C /* ItemResponse.swift in Sources */,
 				A8EF69AD157AF4EECF3EEC15 /* Post.swift in Sources */,
 				927C614FDF45F860308FAEBC /* PostCell.swift in Sources */,
-				E34DED90A117A3C5DD2BC495 /* PostDataSource.swift in Sources */,
 				19A2810E5D4498332C3C8D03 /* PostRepository.swift in Sources */,
 				E94EB7488D846B705A5D627F /* PostTranslator.swift in Sources */,
 				5B484C15DEEC69E662DCAAE0 /* PostUseCase.swift in Sources */,
