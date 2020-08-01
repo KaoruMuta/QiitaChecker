@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="https://github.com/KaoruMuta/QiitaChecker/blob/feature/readme/docs/QiitaChecker.png">
+</div>
 ![QiitaChecker](https://github.com/KaoruMuta/QiitaChecker/blob/feature/readme/docs/QiitaChecker.png)
 # QiitaChecker
 ## What Is This App?
