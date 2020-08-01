@@ -23,3 +23,5 @@ This app, I adopted MVVM + Clean Architecture. A Detail is shown in this figure.
 - https://www.kagemiku.com/blog/archives/442
 - https://github.com/YutoMizutani/architectures
 - https://www.slideshare.net/ssuser3bddf8/clean-architecture-71046114
+- https://qiita.com/H_Crane/items/d2d316b086745417ffae
+- https://qiita.com/shira-shun/items/778e65308f26860664fc
