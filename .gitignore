@@ -101,8 +101,7 @@ vendor
 
 # Custom Setting
 QiitaChecker.xd
-Doc/QiitaChecker.pdf
-Doc/Architecture.pdf
+QiitaChecker.pdf
 
 # SwiftGen
 QiitaChecker/Common/Resource/Generated
