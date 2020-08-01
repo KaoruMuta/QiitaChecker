@@ -1,3 +1,9 @@
+xcassets:
+  inputs: ./QiitaChecker/Common/Resource/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: ./QiitaChecker/Common/Resource/Generated/Assets.swift
+
 strings:
   inputs: ./QiitaChecker/Common/Resource/Localizable.strings
   outputs:

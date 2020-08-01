@@ -55,6 +55,7 @@
 		E247D1E524D47C8F0007FC65 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E247D1E324D47C8F0007FC65 /* Localizable.strings */; };
 		E247D1E924D47F590007FC65 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1E724D47F590007FC65 /* Strings.swift */; };
 		E247D1EA24D47F590007FC65 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1E824D47F590007FC65 /* Colors.swift */; };
+		E29CC27524D52BA900E58693 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC27424D52BA800E58693 /* Assets.swift */; };
 		E633D8382B362E3AA8863854 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE09D2D028D6764FEBA535 /* UIViewController+.swift */; };
 		E69A599072C1D1F172E3C3D5 /* Floaty.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 475C9A6CDC03D889959666C7 /* Floaty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E94EB7488D846B705A5D627F /* PostTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2DEB227B5C3C59A6991B22 /* PostTranslator.swift */; };
@@ -166,6 +167,7 @@
 		E247D1E724D47F590007FC65 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E247D1E824D47F590007FC65 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E27D86423177B0A335033AD3 /* Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; path = "Target Support Files/Pods-QiitaChecker-QiitaCheckerUITests/Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E29CC27424D52BA800E58693 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		E4A16BB4942C80C99EC21523 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		E7959E387B71D5F104D73C7D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		E96C5E1EDB217FA02F891A23 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -433,6 +435,7 @@
 		E247D1E624D47F590007FC65 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				E29CC27424D52BA800E58693 /* Assets.swift */,
 				E247D1E724D47F590007FC65 /* Strings.swift */,
 				E247D1E824D47F590007FC65 /* Colors.swift */,
 			);
@@ -732,6 +735,7 @@
 				8CB19CCF8EAFC754F15189C4 /* BaseRequest.swift in Sources */,
 				E247D1EA24D47F590007FC65 /* Colors.swift in Sources */,
 				07CC726AAE616E89D500F73B /* DependencyManager.swift in Sources */,
+				E29CC27524D52BA900E58693 /* Assets.swift in Sources */,
 				A0F61286DC17536592D70617 /* Foundation+.swift in Sources */,
 				940BAC5482F1C094C62B6ED9 /* HomeViewController.swift in Sources */,
 				8B3BCC8B8368D1FE32C71DBA /* ItemRequest.swift in Sources */,

@@ -26,7 +26,7 @@ final class HomeViewController: UIViewController {
     
     private func configure() {
         navigationController?.navigationBar.isTranslucent = false
-        
+        navigationItem.titleView = UIImageView(image: Asset.qiitaChecker.image)
     }
 }
 
