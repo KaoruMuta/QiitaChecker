@@ -14,7 +14,7 @@ This app separates three layers, `presentation layer`, `domain layer`, and `data
 </div>
 
 ## How To Run This App
-1. rbenv, carthage, mint setup
+1. **`rbenv`, `carthage`, `mint` setup**<br>
 Just run this command in your terminal
 ```
 brew install rbenv ruby-build
@@ -22,13 +22,13 @@ brew install carthage
 brew install mint
 ```
 
-2. rbenv install
+2. **`rbenv` install**<br>
 Just run this command in your terminal
 ```
 rbenv install $(cat .ruby-version)
 ```
 
-3. set the path in `.bashrc` and run
+3. **set the path in `.bashrc` and run `.bashrc`**<br>
 Write the command in `.bashrc` to set the path
 ```
 [[ -d ~/.rbenv  ]] && \
@@ -40,18 +40,14 @@ and run it with this command
 source ~/.bashrc
 ```
 
-4. bundler install and create `Gemfile`
+4. **bundler install**<br>
 Just run this command in your terminal
 ```
 gem install bundler:2.0.1
 ```
-and run this to create `Gemfile`
-```
-bundle init
-```
 
-5. run `Makefile` and open the workspace
-Just run this command in your terminal
+5. **run `Makefile` and open the workspace**<br>
+Just run this command in the project root in your terminal
 ```
 make
 ```
@@ -59,7 +55,6 @@ and
 ```
 open QiitaChecker.xcworkspace
 ```
-
 
 
 ## Used Libraries
