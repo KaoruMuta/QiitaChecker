@@ -14,14 +14,12 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaChecker
     dependencies:
       - carthage: RxSwift
-        linkType: static
       - carthage: RxCocoa
-        linkType: static
       - carthage: RxRelay
-        linkType: static
       - carthage: Alamofire
       - carthage: Parchment
       - carthage: Floaty
+      - carthage: Nuke
     preBuildScripts:
       - script: |
           Pods/SwiftLint/swiftlint autocorrect

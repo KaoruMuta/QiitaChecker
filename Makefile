@@ -1,5 +1,5 @@
 .PHONY: all
-all: bundle_install_force xcodegen pods_force carthage_if_needed carthage_arrange_framework;
+all: bundle_install_force xcodegen pods_force carthage_if_needed resources;
 
 .PHONY: clean
 clean: pods_cache_clear carthage_cache_clear carthage_derived_data_clear;
@@ -53,12 +53,6 @@ carthage:
 carthage_if_needed:
 	test `find ./Carthage/Build/ 2>/dev/null | wc -l` -ne 0 || carthage bootstrap --platform iOS --cache-builds --no-use-binaries
 
-# Consider Static library (RxSwift, etc.)
-.PHONY: carthage_arrange_framework
-carthage_arrange_framework:
-	mv ./Carthage/Build/iOS/Static/* ./Carthage/Build/iOS
-	rm -rf ./Carthage/Build/iOS/Static
-
 .PHONY: carthage_cache_clear
 carthage_cache_clear:
 	rm -rf ./Carthage
@@ -70,3 +64,7 @@ carthage_derived_data_clear:
 .PHONY: carthage_version_clear
 carthage_version_clear:
 	rm Cartfile.resolved
+
+.PHONY: resources
+resources:
+	./Pods/SwiftGen/bin/swiftgen
