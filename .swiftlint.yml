@@ -3,6 +3,7 @@ disabled_rules:
   - trailing_whitespace # allow to have a space
   - unused_closure_parameter # allow to exist unused parameter
   - force_cast
+  - force_try
 opt_in_rules:
 
 included:

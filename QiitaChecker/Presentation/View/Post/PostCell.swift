@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import Nuke
 
-class PostCell: UITableViewCell {
+final class PostCell: UITableViewCell {
     
-    @IBOutlet weak var iconImageView: UIImageView!
-    @IBOutlet weak var titleText: UILabel!
-    @IBOutlet weak var dateText: UILabel!
+    @IBOutlet private weak var icon: UIImageView!
+    @IBOutlet private weak var title: UILabel!
+    @IBOutlet private weak var lgtmCount: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,4 +25,12 @@ class PostCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+}
+
+extension PostCell {
+    func configure(with postItem: Post) {
+        Nuke.loadImage(with: postItem.profileImageurl, into: icon)
+        title.text = postItem.title
+        lgtmCount.text = postItem.lgtmCount
+    }
 }
