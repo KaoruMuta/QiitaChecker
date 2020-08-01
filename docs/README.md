@@ -1,7 +1,6 @@
 <div align="center">
   <img src="QiitaChecker.png"></img>
 </div>
-![QiitaChecker](https://github.com/KaoruMuta/QiitaChecker/blob/feature/readme/docs/QiitaChecker.png)
 # QiitaChecker
 ## What Is This App?
 QiitaChecker enables you to watch the latest articles of Qiita. In the future, I will implement the functions to watch the articles in user's selected tag.
@@ -10,7 +9,9 @@ QiitaChecker enables you to watch the latest articles of Qiita. In the future, I
 In this app, I adopted MVVM + Clean Architecture. A Detail is shown in this figure.<br>
 This app separates three layers, `presentation layer`, `domain layer`, and `data layer`. In `presentation layer`, UI Event and Databinding are handled with viewcontroller and viewmodel. Essentially, logics are stored in viewmodel. In `domain layer`, usecase stores and performs domain logics and translates received immutable data (entity) into model through translator. In `data layer`, repository receives immutable data with datastore and pass it to usecase. Also, datastore receives the immutable data as entity from QiitaAPI and pass entity to repository.
 
-![Architecture](https://github.com/KaoruMuta/QiitaChecker/blob/feature/readme/docs/Architecture.png)
+<div align="center">
+  <img src="Architecture.png"></img>
+</div>
 
 ## How To Run This App
 1. rbenv, carthage, mint setup
