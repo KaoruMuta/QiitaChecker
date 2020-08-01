@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="../docs/QiitaChecker.png"></img>
+  <img src="QiitaChecker.png"></img>
 </div>
 ![QiitaChecker](https://github.com/KaoruMuta/QiitaChecker/blob/feature/readme/docs/QiitaChecker.png)
 # QiitaChecker
