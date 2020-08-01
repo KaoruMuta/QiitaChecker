@@ -1,11 +1,11 @@
 # QiitaChecker
-![QiitaChecker](https://github.com/KaoruMuta/QiitaChecker/doc/QiitaChecker.png)
+![QiitaChecker](https://github.com/KaoruMuta/QiitaChecker/blob/feature/readme/Doc/QiitaChecker.png)
 ## What Is This App?
 QiitaChecker enables you to watch the latest articles of Qiita. In the future, I will implement the functions to watch the articles in user's selected tag.
 
 ## App Architecture
 This app, I adopted MVVM + Clean Architecture. A Detail is shown in this figure.<br>
-![Architecture.pdf](https://github.com/KaoruMuta/QiitaChecker/doc/Architecture.pdf)
+![Architecture.pdf](https://github.com/KaoruMuta/QiitaChecker/blob/feature/readme/Doc/Architecture.png)
 
 ## Used Libraries
 - [QiitaAPI](https://qiita.com/api/v2/docs)
