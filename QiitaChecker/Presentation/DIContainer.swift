@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct DependencyManager {
+struct DIContainer {
     static let postUseCase: PostUseCase = {
-        let repository = PostRepositoryImpl()
+        let dataStore = PostDataStoreImpl()
+        let repository = PostRepositoryImpl(dataStore: dataStore)
         let translator = PostTranslatorImpl()
         return PostUseCaseImpl(repository: repository, translator: translator)
     }()

@@ -48,7 +48,7 @@ extension HomeViewController: PagingViewControllerDataSource {
 
 private extension HomeViewController {
     private func configurePaging() {
-        let viewController = PostViewController.instantiate(viewModel: PostViewModel(useCase: DependencyManager.postUseCase))
+        let viewController = PostViewController.instantiate(viewModel: PostViewModel(useCase: DIContainer.postUseCase))
         pageContents.append(viewController)
         
         let pagingViewController = PagingViewController(viewControllers: pageContents)

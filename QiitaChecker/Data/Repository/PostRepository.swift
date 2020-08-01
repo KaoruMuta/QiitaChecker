@@ -11,8 +11,15 @@ protocol PostRepository {
     func fetchArticles() -> Single<[ItemResponse]>
 }
 
-struct PostRepositoryImpl: PostRepository {
+final class PostRepositoryImpl: PostRepository {
+    
+    private let dataStore: PostDataStore
+    
+    init(dataStore: PostDataStore) {
+        self.dataStore = dataStore
+    }
+    
     func fetchArticles() -> Single<[ItemResponse]> {
-        return APIClient.send(request: ItemRequest.get)
+        return dataStore.fetchArticles()
     }
 }

@@ -8,6 +8,9 @@
 import Foundation
 
 protocol PostTranslator {
+    typealias Entity = ItemResponse
+    typealias Model = Post
+    
     func translate(from entity: [ItemResponse]) -> [Post]
 }
 

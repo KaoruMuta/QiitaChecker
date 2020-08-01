@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07BA7228334D42FB88ECDF8F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F20D224C495CF4867DE949A /* RxCocoa.framework */; };
-		07CC726AAE616E89D500F73B /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDE4D9F1C2315081DF66407 /* DependencyManager.swift */; };
+		07CC726AAE616E89D500F73B /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDE4D9F1C2315081DF66407 /* DIContainer.swift */; };
 		0BCB2763164BA9908D62BCEB /* PostViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB01C1B6C74A3816457B287 /* PostViewController.storyboard */; };
 		10142456986559A99F8992A5 /* Parchment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 985C3FBACF887EEE20B0C9A2 /* Parchment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		149DEAC750A722B98A8D5ACD /* Parchment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985C3FBACF887EEE20B0C9A2 /* Parchment.framework */; };
@@ -56,6 +56,7 @@
 		E247D1E924D47F590007FC65 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1E724D47F590007FC65 /* Strings.swift */; };
 		E247D1EA24D47F590007FC65 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E247D1E824D47F590007FC65 /* Colors.swift */; };
 		E29CC27524D52BA900E58693 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC27424D52BA800E58693 /* Assets.swift */; };
+		E29CC27824D5322C00E58693 /* PostDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC27724D5322C00E58693 /* PostDataStore.swift */; };
 		E633D8382B362E3AA8863854 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE09D2D028D6764FEBA535 /* UIViewController+.swift */; };
 		E69A599072C1D1F172E3C3D5 /* Floaty.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 475C9A6CDC03D889959666C7 /* Floaty.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E94EB7488D846B705A5D627F /* PostTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2DEB227B5C3C59A6991B22 /* PostTranslator.swift */; };
@@ -148,7 +149,7 @@
 		9EE519665362D53493C45CA6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A165DB404CB2074142CB99A9 /* QiitaCheckerUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = QiitaCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28A9D6FC07B8311771E19CE /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
-		AEDE4D9F1C2315081DF66407 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		AEDE4D9F1C2315081DF66407 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		B420D3927773AC66385326C7 /* QiitaCheckerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = QiitaCheckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FC33F017B2121E74255729 /* Pods-QiitaChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker.debug.xcconfig"; path = "Target Support Files/Pods-QiitaChecker/Pods-QiitaChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B6702D80765B27DB6E04B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -168,6 +169,7 @@
 		E247D1E824D47F590007FC65 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E27D86423177B0A335033AD3 /* Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; path = "Target Support Files/Pods-QiitaChecker-QiitaCheckerUITests/Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E29CC27424D52BA800E58693 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		E29CC27724D5322C00E58693 /* PostDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataStore.swift; sourceTree = "<group>"; };
 		E4A16BB4942C80C99EC21523 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		E7959E387B71D5F104D73C7D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		E96C5E1EDB217FA02F891A23 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -278,9 +280,10 @@
 		472AEE00027A4E2648C6822E /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F13E00B1901796C080C39BF8 /* Repository */,
+				E29CC27624D5321600E58693 /* DataStore */,
 				B517D4C0FD1F10014C7892CE /* Entity */,
 				F9A3A7C5351869536E27752B /* Network */,
-				F13E00B1901796C080C39BF8 /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -327,7 +330,7 @@
 		784ADC260AF0BDFDD147FB29 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				AEDE4D9F1C2315081DF66407 /* DependencyManager.swift */,
+				AEDE4D9F1C2315081DF66407 /* DIContainer.swift */,
 				20ED43BAD9FDF578E0A41138 /* View */,
 				A461C9A3A7747DDA769E6138 /* ViewModel */,
 			);
@@ -442,6 +445,22 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		E29CC27624D5321600E58693 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC27724D5322C00E58693 /* PostDataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		E29CC27924D5330C00E58693 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D36951F2B4D95AF7E4C80EEE /* ItemRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		EEAAAACA1A58E413DD2A1503 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,12 +480,12 @@
 		F9A3A7C5351869536E27752B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E29CC27924D5330C00E58693 /* Request */,
 				CA32B8F39B86BB9CBB4AE7DF /* APIClient.swift */,
 				D7B6D1CE441F831F96A3756A /* APIConstants.swift */,
 				8EA237E2A9A14CD6FBA7130D /* APIResult.swift */,
 				61DB86C3CDF3951AFEF50150 /* BaseAPI.swift */,
 				85DDBC47B8D6EB1370FD55AF /* BaseRequest.swift */,
-				D36951F2B4D95AF7E4C80EEE /* ItemRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -734,7 +753,7 @@
 				24F5068EDC9AA2F59CE82D86 /* BaseAPI.swift in Sources */,
 				8CB19CCF8EAFC754F15189C4 /* BaseRequest.swift in Sources */,
 				E247D1EA24D47F590007FC65 /* Colors.swift in Sources */,
-				07CC726AAE616E89D500F73B /* DependencyManager.swift in Sources */,
+				07CC726AAE616E89D500F73B /* DIContainer.swift in Sources */,
 				E29CC27524D52BA900E58693 /* Assets.swift in Sources */,
 				A0F61286DC17536592D70617 /* Foundation+.swift in Sources */,
 				940BAC5482F1C094C62B6ED9 /* HomeViewController.swift in Sources */,
@@ -747,6 +766,7 @@
 				E94EB7488D846B705A5D627F /* PostTranslator.swift in Sources */,
 				5B484C15DEEC69E662DCAAE0 /* PostUseCase.swift in Sources */,
 				E247D1DF24D478E60007FC65 /* SafariViewController.swift in Sources */,
+				E29CC27824D5322C00E58693 /* PostDataStore.swift in Sources */,
 				E247D1E124D479AD0007FC65 /* UIColor+.swift in Sources */,
 				D2AE909DF71FB1308D92BC7C /* PostViewController.swift in Sources */,
 				7EE9E95417101C35AD41950C /* PostViewModel.swift in Sources */,
