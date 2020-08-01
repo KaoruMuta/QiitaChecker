@@ -18,7 +18,6 @@ targets:
       - carthage: RxRelay
       - carthage: Alamofire
       - carthage: Parchment
-      - carthage: Floaty
       - carthage: Nuke
     preBuildScripts:
       - script: |

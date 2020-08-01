@@ -7,7 +7,6 @@
 
 import UIKit
 import Parchment
-import Floaty
 
 protocol HomeView {}
 
@@ -21,12 +20,13 @@ final class HomeViewController: UIViewController {
         
         configure()
         configurePaging()
-        configureFAB()
     }
     
     private func configure() {
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.titleView = UIImageView(image: Asset.qiitaChecker.image)
+        navigationItem.rightBarButtonItem = .init(barButtonSystemItem: .add, target: self, action: nil)
+        navigationItem.rightBarButtonItem?.tintColor = .constant(.qiita)
     }
 }
 
@@ -69,14 +69,5 @@ private extension HomeViewController {
         
         pagingViewController.dataSource = self
         
-    }
-}
-
-private extension HomeViewController {
-    private func configureFAB() {
-        let floatingActionButton = Floaty()
-        floatingActionButton.buttonColor = .constant(.qiita)
-        floatingActionButton.plusColor = .white
-        view.addSubview(floatingActionButton)
     }
 }
