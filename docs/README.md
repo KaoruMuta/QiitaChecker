@@ -1,6 +1,7 @@
 <div align="center">
   <img src="QiitaChecker.png"></img>
 </div>
+
 # QiitaChecker
 ## What Is This App?
 QiitaChecker enables you to watch the latest articles of Qiita. In the future, I will implement the functions to watch the articles in user's selected tag.
