@@ -14,6 +14,23 @@ extension UIColor {
             return ColorName.qiita.color
         }
     }
+    
+    static func background(_ type: ColorType) -> UIColor {
+        switch type {
+        case .qiita:
+            return ColorName.qiita.color
+        }
+    }
+    
+    static func dynamicColor(light: UIColor, dark: UIColor) -> UIColor {
+        if #available(iOS 13, *) {
+            return UIColor { traitCollection in
+                traitCollection.userInterfaceStyle == .dark ? dark : light
+            }
+        } else {
+            return light
+        }
+    }
 }
 
 enum ColorType {

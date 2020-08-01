@@ -54,6 +54,7 @@ private extension HomeViewController {
         let pagingViewController = PagingViewController(viewControllers: pageContents)
         pagingViewController.selectedTextColor = .constant(.qiita)
         pagingViewController.indicatorColor = .constant(.qiita)
+        pagingViewController.menuBackgroundColor = .dynamicColor(light: .white, dark: .black)
         addChild(pagingViewController)
         view.addSubview(pagingViewController.view)
         pagingViewController.didMove(toParent: self)
