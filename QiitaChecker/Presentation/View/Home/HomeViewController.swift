@@ -7,6 +7,8 @@
 
 import UIKit
 import Parchment
+import RxSwift
+import RxCocoa
 
 protocol HomeView {}
 
@@ -14,12 +16,14 @@ final class HomeViewController: UIViewController {
     
     private var pageContents: [UIViewController] = []
     private var pageTitles = [L10n.latestPost]
+    private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configure()
         configurePaging()
+        bind()
     }
     
     private func configure() {
@@ -27,6 +31,15 @@ final class HomeViewController: UIViewController {
         navigationItem.titleView = UIImageView(image: Asset.qiitaChecker.image)
         navigationItem.rightBarButtonItem = .init(barButtonSystemItem: .add, target: self, action: nil)
         navigationItem.rightBarButtonItem?.tintColor = .constant(.qiita)
+    }
+    
+    private func bind() {
+        navigationItem.rightBarButtonItem?.rx.tap
+            .subscribe(onNext: { [weak self] in
+                let viewController = TagViewController.instantiate(viewModel: TagViewModel(useCase: DIContainer.tagUseCase))
+                self?.navigationController?.pushViewController(viewController, animated: true)
+            })
+            .disposed(by: disposeBag)
     }
 }
 

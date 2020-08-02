@@ -55,6 +55,19 @@
 		CC2D928EE5A96FE27097AFD4 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA237E2A9A14CD6FBA7130D /* APIResult.swift */; };
 		D2AE909DF71FB1308D92BC7C /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A16BB4942C80C99EC21523 /* PostViewController.swift */; };
 		DAF53656776732D22020648A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86824AA9B901163818F3106B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E29CC2D724D67C6200E58693 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2D624D67C6200E58693 /* TagViewController.swift */; };
+		E29CC2D924D67C7400E58693 /* TagViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29CC2D824D67C7400E58693 /* TagViewController.storyboard */; };
+		E29CC2DB24D6809300E58693 /* TagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2DA24D6809300E58693 /* TagViewModel.swift */; };
+		E29CC2DE24D6838D00E58693 /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2DC24D6838D00E58693 /* TagCell.swift */; };
+		E29CC2DF24D6838D00E58693 /* TagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29CC2DD24D6838D00E58693 /* TagCell.xib */; };
+		E29CC2E124D6860900E58693 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2E024D6860900E58693 /* UICollectionView+.swift */; };
+		E29CC2E324D68B1A00E58693 /* TagUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2E224D68B1A00E58693 /* TagUseCase.swift */; };
+		E29CC2E524D68B6900E58693 /* TagRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2E424D68B6900E58693 /* TagRepository.swift */; };
+		E29CC2E724D68BA100E58693 /* TagDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2E624D68BA100E58693 /* TagDataStore.swift */; };
+		E29CC2E924D68BBC00E58693 /* TagResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2E824D68BBC00E58693 /* TagResponse.swift */; };
+		E29CC2EB24D68BD900E58693 /* TagRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2EA24D68BD900E58693 /* TagRequest.swift */; };
+		E29CC2ED24D68E8000E58693 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2EC24D68E8000E58693 /* Tag.swift */; };
+		E29CC2EF24D68ED900E58693 /* TagTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2EE24D68ED900E58693 /* TagTranslator.swift */; };
 		E633D8382B362E3AA8863854 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE09D2D028D6764FEBA535 /* UIViewController+.swift */; };
 		E94EB7488D846B705A5D627F /* PostTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2DEB227B5C3C59A6991B22 /* PostTranslator.swift */; };
 		EC38B41E5D7FBDA277E4B64A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5056C4844F2C4F6CC40C3A2C /* LaunchScreen.storyboard */; };
@@ -160,7 +173,20 @@
 		D7B6D1CE441F831F96A3756A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		DB6153FB4EC4821255CB2E00 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		DF7C5EA5432CF3F5B6EA6186 /* Foundation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+.swift"; sourceTree = "<group>"; };
-		E1DA7AF0D096448FBF8869BB /* Colors.txt */ = {isa = PBXFileReference; path = Colors.txt; sourceTree = "<group>"; };
+		E1DA7AF0D096448FBF8869BB /* Colors.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Colors.txt; sourceTree = "<group>"; };
+		E29CC2D624D67C6200E58693 /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		E29CC2D824D67C7400E58693 /* TagViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TagViewController.storyboard; sourceTree = "<group>"; };
+		E29CC2DA24D6809300E58693 /* TagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewModel.swift; sourceTree = "<group>"; };
+		E29CC2DC24D6838D00E58693 /* TagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		E29CC2DD24D6838D00E58693 /* TagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCell.xib; sourceTree = "<group>"; };
+		E29CC2E024D6860900E58693 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		E29CC2E224D68B1A00E58693 /* TagUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagUseCase.swift; sourceTree = "<group>"; };
+		E29CC2E424D68B6900E58693 /* TagRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRepository.swift; sourceTree = "<group>"; };
+		E29CC2E624D68BA100E58693 /* TagDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDataStore.swift; sourceTree = "<group>"; };
+		E29CC2E824D68BBC00E58693 /* TagResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagResponse.swift; sourceTree = "<group>"; };
+		E29CC2EA24D68BD900E58693 /* TagRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagRequest.swift; sourceTree = "<group>"; };
+		E29CC2EC24D68E8000E58693 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		E29CC2EE24D68ED900E58693 /* TagTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTranslator.swift; sourceTree = "<group>"; };
 		E4A16BB4942C80C99EC21523 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		E7959E387B71D5F104D73C7D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		E96C5E1EDB217FA02F891A23 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -216,7 +242,6 @@
 				A6EF8CDBB56196C06469C751 /* Pods-QiitaCheckerTests.debug.xcconfig */,
 				3D57B762D9B0472400124ADD /* Pods-QiitaCheckerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -235,6 +260,7 @@
 				DF7C5EA5432CF3F5B6EA6186 /* Foundation+.swift */,
 				7C874FA79B5F4D2C7C190DC7 /* UIColor+.swift */,
 				A28A9D6FC07B8311771E19CE /* UITableView+.swift */,
+				E29CC2E024D6860900E58693 /* UICollectionView+.swift */,
 				65DE09D2D028D6764FEBA535 /* UIViewController+.swift */,
 			);
 			path = Extension;
@@ -267,6 +293,7 @@
 		20ED43BAD9FDF578E0A41138 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E29CC2D524D67C3300E58693 /* Tag */,
 				5056C4844F2C4F6CC40C3A2C /* LaunchScreen.storyboard */,
 				05E25C464A75D058A80B6D5D /* Home */,
 				7B134B9A780F659BE195097C /* Post */,
@@ -279,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				B86CD50DA2A9D76AA053644A /* PostUseCase.swift */,
+				E29CC2E224D68B1A00E58693 /* TagUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -287,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				BF37AB66618400189F5BE86A /* PostDataStore.swift */,
+				E29CC2E624D68BA100E58693 /* TagDataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -295,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				EDA62C834506F114B1E013EE /* ItemRequest.swift */,
+				E29CC2EA24D68BD900E58693 /* TagRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -404,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				0BA560D7609B85D438459736 /* PostViewModel.swift */,
+				E29CC2DA24D6809300E58693 /* TagViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -412,6 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				3C2DEB227B5C3C59A6991B22 /* PostTranslator.swift */,
+				E29CC2EE24D68ED900E58693 /* TagTranslator.swift */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
@@ -432,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				EAEED8D0E642AF304056D304 /* ItemResponse.swift */,
+				E29CC2E824D68BBC00E58693 /* TagResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -446,6 +479,17 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
+		E29CC2D524D67C3300E58693 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC2D624D67C6200E58693 /* TagViewController.swift */,
+				E29CC2D824D67C7400E58693 /* TagViewController.storyboard */,
+				E29CC2DC24D6838D00E58693 /* TagCell.swift */,
+				E29CC2DD24D6838D00E58693 /* TagCell.xib */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
 		E682B6A36053B531A90A5A8E /* Web */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +502,7 @@
 			isa = PBXGroup;
 			children = (
 				E96C5E1EDB217FA02F891A23 /* Post.swift */,
+				E29CC2EC24D68E8000E58693 /* Tag.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -466,6 +511,7 @@
 			isa = PBXGroup;
 			children = (
 				0585A183969B7BDA4BFBF2F9 /* PostRepository.swift */,
+				E29CC2E424D68B6900E58693 /* TagRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -569,6 +615,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = 50D025BA0CEA0470C4F69080;
@@ -589,7 +636,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5B2494EF4E23029BD49CA8 /* Assets.xcassets in Resources */,
+				E29CC2D924D67C7400E58693 /* TagViewController.storyboard in Resources */,
 				7804CD910A692F49A3E19C14 /* Colors.txt in Resources */,
+				E29CC2DF24D6838D00E58693 /* TagCell.xib in Resources */,
 				7EF87858232CE4DE5D096D75 /* Home.storyboard in Resources */,
 				EC38B41E5D7FBDA277E4B64A /* LaunchScreen.storyboard in Resources */,
 				ABB67C7CBAB78432CB540D2E /* Localizable.strings in Resources */,
@@ -737,7 +786,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2D6C65EF1A47C3E638139FE /* APIClient.swift in Sources */,
+				E29CC2ED24D68E8000E58693 /* Tag.swift in Sources */,
 				92BC79131873568C920162E0 /* APIConstants.swift in Sources */,
+				E29CC2DE24D6838D00E58693 /* TagCell.swift in Sources */,
 				CC2D928EE5A96FE27097AFD4 /* APIResult.swift in Sources */,
 				617BDE4C893CFA641B4C63BB /* AppDelegate.swift in Sources */,
 				47E32490453D9BB08CB3239D /* Assets.swift in Sources */,
@@ -746,9 +797,15 @@
 				9E62B9B6B1E6FDE155067F4E /* Colors.swift in Sources */,
 				2A737555942931A707DC8376 /* DIContainer.swift in Sources */,
 				A0F61286DC17536592D70617 /* Foundation+.swift in Sources */,
+				E29CC2E924D68BBC00E58693 /* TagResponse.swift in Sources */,
 				940BAC5482F1C094C62B6ED9 /* HomeViewController.swift in Sources */,
 				AB161654BA3C2A47783EC06D /* ItemRequest.swift in Sources */,
 				8F7AB9AE3536EEB8D9E9FE4C /* ItemResponse.swift in Sources */,
+				E29CC2D724D67C6200E58693 /* TagViewController.swift in Sources */,
+				E29CC2DB24D6809300E58693 /* TagViewModel.swift in Sources */,
+				E29CC2E724D68BA100E58693 /* TagDataStore.swift in Sources */,
+				E29CC2E524D68B6900E58693 /* TagRepository.swift in Sources */,
+				E29CC2E324D68B1A00E58693 /* TagUseCase.swift in Sources */,
 				A8EF69AD157AF4EECF3EEC15 /* Post.swift in Sources */,
 				927C614FDF45F860308FAEBC /* PostCell.swift in Sources */,
 				F9CC4C7A7B19BB4025D9E1D4 /* PostDataStore.swift in Sources */,
@@ -757,11 +814,14 @@
 				5B484C15DEEC69E662DCAAE0 /* PostUseCase.swift in Sources */,
 				D2AE909DF71FB1308D92BC7C /* PostViewController.swift in Sources */,
 				7EE9E95417101C35AD41950C /* PostViewModel.swift in Sources */,
+				E29CC2EB24D68BD900E58693 /* TagRequest.swift in Sources */,
 				4F3264C73409C24F787A8F62 /* SafariViewController.swift in Sources */,
 				B0BA4AD5E16E02F42D837B06 /* SceneDelegate.swift in Sources */,
 				BFD0F473604EEF487967BC66 /* Strings.swift in Sources */,
 				992D46F2A5C6FDAE6049A6F8 /* UIColor+.swift in Sources */,
+				E29CC2E124D6860900E58693 /* UICollectionView+.swift in Sources */,
 				6E06325B3D1FEEC38572C90A /* UITableView+.swift in Sources */,
+				E29CC2EF24D68ED900E58693 /* TagTranslator.swift in Sources */,
 				E633D8382B362E3AA8863854 /* UIViewController+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
