@@ -9,5 +9,5 @@ import UIKit
 
 struct Tag {
     let iconUrl: URL
-    let id: String
+    let name: String
 }

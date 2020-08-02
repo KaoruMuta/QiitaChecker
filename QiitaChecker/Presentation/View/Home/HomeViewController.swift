@@ -29,7 +29,7 @@ final class HomeViewController: UIViewController {
     private func configure() {
         navigationController?.navigationBar.isTranslucent = false
         navigationItem.titleView = UIImageView(image: Asset.qiitaChecker.image)
-        navigationItem.rightBarButtonItem = .init(barButtonSystemItem: .add, target: self, action: nil)
+        navigationItem.rightBarButtonItem = .init(barButtonSystemItem: .add, target: nil, action: nil)
         navigationItem.rightBarButtonItem?.tintColor = .constant(.qiita)
     }
     
@@ -37,6 +37,7 @@ final class HomeViewController: UIViewController {
         navigationItem.rightBarButtonItem?.rx.tap
             .subscribe(onNext: { [weak self] in
                 let viewController = TagViewController.instantiate(viewModel: TagViewModel(useCase: DIContainer.tagUseCase))
+                self?.navigationItem.backBarButtonItem = UIBarButtonItem(title: L10n.homeScreen, style: .plain, target: nil, action: nil)
                 self?.navigationController?.pushViewController(viewController, animated: true)
             })
             .disposed(by: disposeBag)

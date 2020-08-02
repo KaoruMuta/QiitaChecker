@@ -33,9 +33,8 @@ final class TagViewController: UIViewController {
     private func configure() {
         tagCollectionView.delegate = self
         tagCollectionView.register(cellType: TagCell.self)
-        navigationController?.title = L10n.tagList
-        navigationItem.leftBarButtonItem?.title = "<"
-        navigationItem.leftBarButtonItem?.tintColor = .constant(.qiita)
+        navigationItem.title = L10n.tagList
+        navigationController?.navigationBar.tintColor = .constant(.qiita)
         
         viewModel?.fetchTags()
     }
@@ -44,10 +43,23 @@ final class TagViewController: UIViewController {
         viewModel?.tags
             .bind(to: tagCollectionView.rx.items) { (collectionView, row, item) in
                 let cell = collectionView.dequeueReusableCell(with: TagCell.self, for: IndexPath(row: row, section: 0))
-                cell.configure(iconUrl: item.iconUrl, id: item.id)
+                cell.configure(iconUrl: item.iconUrl, id: item.name)
                 return cell
         }
         .disposed(by: disposeBag)
+        
+        tagCollectionView.rx.itemSelected
+            .subscribe(
+                onNext: { [weak self] indexPath in
+                    self?.tagCollectionView.deselectItem(at: indexPath, animated: true)
+                    guard let selectedTag = self?.viewModel?.tags.value[indexPath.row] else { return }
+                    print(selectedTag)
+                    self?.navigationController?.popViewController(animated: true)
+                },
+                onError: { _ in
+                    
+            })
+            .disposed(by: disposeBag)
     }
 
 }

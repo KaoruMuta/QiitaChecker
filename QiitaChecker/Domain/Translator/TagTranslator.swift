@@ -18,9 +18,9 @@ struct TagTranslatorImpl: TagTranslator {
     func translate(from entity: [TagResponse]) -> [Tag] {
         entity.map({
             let iconUrl = URL(string: $0.iconUrl ?? "https://qiita.com")!
-            let id = $0.id ?? "failed to load"
+            let name = $0.id ?? "failed to load"
             
-            return Tag(iconUrl: iconUrl, id: id)
+            return Tag(iconUrl: iconUrl, name: name)
         })
     }
 }
