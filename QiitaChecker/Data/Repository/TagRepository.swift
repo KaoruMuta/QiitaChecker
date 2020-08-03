@@ -9,7 +9,7 @@ import RxSwift
 
 protocol TagRepository {
     func fetchTags() -> Single<[TagResponse]>
-    func saveTag(with tag: String)
+    func manageTag(with tag: String)
 }
 
 final class TagRepositoryImpl: TagRepository {
@@ -24,7 +24,8 @@ final class TagRepositoryImpl: TagRepository {
         return dataStore.fetchTags()
     }
     
-    func saveTag(with tag: String) {
-        dataStore.saveTag(with: tag)
+    func manageTag(with tag: String) {
+        dataStore.manageTag(with: tag)
     }
+    
 }

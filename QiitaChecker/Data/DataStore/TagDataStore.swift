@@ -10,21 +10,31 @@ import RealmSwift
 
 protocol TagDataStore {
     func fetchTags() -> Single<[TagResponse]>
-    func saveTag(with tag: String)
+    func manageTag(with tag: String)
 }
 
 struct TagDataStoreImpl: TagDataStore {
+    
+    private let realm = try! Realm()
     
     func fetchTags() -> Single<[TagResponse]> {
         APIClient.send(request: TagRequest.get)
     }
     
-    func saveTag(with tag: String) {
-        let realm = try! Realm()
-        try! realm.write({
-            let savedTag = SavedTag()
-            savedTag.name = tag
-            realm.add(savedTag)
-        })
+    func manageTag(with tag: String) {
+        let savedTags = realm.objects(SavedTag.self)
+        let duplicatedTags = savedTags.filter({ $0.name == tag })
+        if duplicatedTags.isEmpty {
+            try! realm.write({
+                let savedTag = SavedTag()
+                savedTag.name = tag
+                realm.add(savedTag)
+            })
+        } else {
+            let deleteColumn = realm.objects(SavedTag.self).filter("name == '\(tag)'")
+            try! realm.write({
+                realm.delete(deleteColumn)
+            })
+        }
     }
 }

@@ -9,7 +9,7 @@ import RxSwift
 
 protocol TagUseCase {
     func fetchTags() -> Single<[Tag]>
-    func saveTag(with tag: String)
+    func manageTag(with tag: String)
 }
 
 final class TagUseCaseImpl: TagUseCase {
@@ -28,7 +28,7 @@ final class TagUseCaseImpl: TagUseCase {
         })
     }
     
-    func saveTag(with tag: String) {
-        repository.saveTag(with: tag)
+    func manageTag(with tag: String) {
+        repository.manageTag(with: tag)
     }
 }
