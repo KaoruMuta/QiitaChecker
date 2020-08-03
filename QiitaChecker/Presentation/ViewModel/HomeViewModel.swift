@@ -15,7 +15,7 @@ final class HomeViewModel {
     private let useCase: HomeUseCase
     
     var isLoading: BehaviorRelay<Bool> = .init(value: false)
-    var allTags: BehaviorRelay<[String]> = .init(value: [L10n.latestPost])
+    var allTags: BehaviorRelay<[String]> = .init(value: [])
     
     private let disposeBag = DisposeBag()
     
@@ -29,7 +29,7 @@ final class HomeViewModel {
             .subscribe(
                 onNext: { [weak self] tags in
                     guard let self = self else { return }
-                    var currentTags = self.allTags.value
+                    var currentTags = [L10n.latestPost]
                     tags.forEach({
                         currentTags.append($0.name)
                     })
