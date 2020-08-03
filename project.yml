@@ -16,9 +16,12 @@ targets:
       - carthage: RxSwift
       - carthage: RxCocoa
       - carthage: RxRelay
+      - carthage: RxRealm
       - carthage: Alamofire
       - carthage: Parchment
       - carthage: Nuke
+      - carthage: Realm
+      - carthage: RealmSwift
     preBuildScripts:
       - script: |
           Pods/SwiftLint/swiftlint autocorrect

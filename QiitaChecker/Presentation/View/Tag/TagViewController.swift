@@ -52,8 +52,8 @@ final class TagViewController: UIViewController {
             .subscribe(
                 onNext: { [weak self] indexPath in
                     self?.tagCollectionView.deselectItem(at: indexPath, animated: true)
-                    guard let selectedTag = self?.viewModel?.tags.value[indexPath.row] else { return }
-                    print(selectedTag)
+                    guard let selectedTagName = self?.viewModel?.tags.value[indexPath.row].name else { return }
+                    self?.viewModel?.saveTag(with: selectedTagName)
                     self?.navigationController?.popViewController(animated: true)
                 },
                 onError: { _ in

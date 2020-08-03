@@ -34,4 +34,8 @@ final class TagViewModel {
         })
         .disposed(by: disposeBag)
     }
+    
+    func saveTag(with tag: String) {
+        useCase.saveTag(with: tag)
+    }
 }

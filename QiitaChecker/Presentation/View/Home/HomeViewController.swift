@@ -16,6 +16,7 @@ final class HomeViewController: UIViewController {
     
     private var pageContents: [UIViewController] = []
     private var pageTitles = [L10n.latestPost]
+    private var viewModel: HomeViewModel?
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -31,6 +32,9 @@ final class HomeViewController: UIViewController {
         navigationItem.titleView = UIImageView(image: Asset.qiitaChecker.image)
         navigationItem.rightBarButtonItem = .init(barButtonSystemItem: .add, target: nil, action: nil)
         navigationItem.rightBarButtonItem?.tintColor = .constant(.qiita)
+        
+        viewModel = HomeViewModel(useCase: DIContainer.homeUseCase)
+        viewModel?.loadSavedTags()
     }
     
     private func bind() {
@@ -39,6 +43,16 @@ final class HomeViewController: UIViewController {
                 let viewController = TagViewController.instantiate(viewModel: TagViewModel(useCase: DIContainer.tagUseCase))
                 self?.navigationItem.backBarButtonItem = UIBarButtonItem(title: L10n.homeScreen, style: .plain, target: nil, action: nil)
                 self?.navigationController?.pushViewController(viewController, animated: true)
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel?.savedTags
+            .subscribe(
+                onNext: { [weak self] tags in
+                    print(tags)
+                },
+                onError: { [weak self] error in
+                    print(error)
             })
             .disposed(by: disposeBag)
     }
