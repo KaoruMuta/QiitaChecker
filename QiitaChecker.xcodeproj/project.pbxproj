@@ -85,7 +85,6 @@
 		EC38B41E5D7FBDA277E4B64A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5056C4844F2C4F6CC40C3A2C /* LaunchScreen.storyboard */; };
 		F04254B618F9C7BE5E909F40 /* RxRealm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB72E842FC2F7AB487980522 /* RxRealm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2348274F36E68BFBF7C250E /* RxRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB72E842FC2F7AB487980522 /* RxRealm.framework */; };
-		F3004E95922FA14C3383F003 /* HomeTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488D7C9C4AD929574864CAD /* HomeTranslator.swift */; };
 		F4678C11C3DFA045E6FE38A5 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A15917AC064CAE38FA73EF /* Tag.swift */; };
 		F5B3EA6FC0F8A83DC9CBAC46 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A869B46A63677873A812B /* RxRelay.framework */; };
 		F9CC4C7A7B19BB4025D9E1D4 /* PostDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF37AB66618400189F5BE86A /* PostDataStore.swift */; };
@@ -189,7 +188,6 @@
 		8D14AFE775F4027F0D2382BB /* Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; path = "Target Support Files/Pods-QiitaChecker-QiitaCheckerUITests/Pods-QiitaChecker-QiitaCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E7917C6CFC952169C4601A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8EA237E2A9A14CD6FBA7130D /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
-		9488D7C9C4AD929574864CAD /* HomeTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTranslator.swift; sourceTree = "<group>"; };
 		985C3FBACF887EEE20B0C9A2 /* Parchment.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parchment.framework; sourceTree = "<group>"; };
 		9AB01C1B6C74A3816457B287 /* PostViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostViewController.storyboard; sourceTree = "<group>"; };
 		9DBC3F81D7A0AB595B7C3310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
@@ -492,7 +490,6 @@
 		AE1D8D0E752ACFFF34AC1307 /* Translator */ = {
 			isa = PBXGroup;
 			children = (
-				9488D7C9C4AD929574864CAD /* HomeTranslator.swift */,
 				3C2DEB227B5C3C59A6991B22 /* PostTranslator.swift */,
 				113DF0D8F6CF00CB049C5438 /* TagTranslator.swift */,
 			);
@@ -845,7 +842,6 @@
 				A0F61286DC17536592D70617 /* Foundation+.swift in Sources */,
 				6D458ACEC050AB3D7DFDF4D0 /* HomeDataStore.swift in Sources */,
 				92155F9737EFC05F770317C6 /* HomeRepository.swift in Sources */,
-				F3004E95922FA14C3383F003 /* HomeTranslator.swift in Sources */,
 				5BCFE712CB84B94D0AFFA4E0 /* HomeUseCase.swift in Sources */,
 				940BAC5482F1C094C62B6ED9 /* HomeViewController.swift in Sources */,
 				09078FFF6336BB43943ED760 /* HomeViewModel.swift in Sources */,

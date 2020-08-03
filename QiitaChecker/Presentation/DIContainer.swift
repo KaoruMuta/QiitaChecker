@@ -25,7 +25,6 @@ struct DIContainer {
     static let homeUseCase: HomeUseCase = {
         let dataStore = HomeDataStoreImpl()
         let repository = HomeRepositoryImpl(dataStore: dataStore)
-        let translator = HomeTranslatorImpl()
-        return HomeUseCaseImpl(repository: repository, translator: translator)
+        return HomeUseCaseImpl(repository: repository)
     }()
 }

@@ -14,9 +14,9 @@ protocol HomeView {}
 
 final class HomeViewController: UIViewController {
     
-    private var pageContents: [UIViewController] = []
-    private var pageTitles = [L10n.latestPost]
-    private var viewModel: HomeViewModel?
+    private var viewModel: HomeViewModel!
+    private var pagingViewController: PagingViewController!
+    
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ final class HomeViewController: UIViewController {
         navigationItem.rightBarButtonItem?.tintColor = .constant(.qiita)
         
         viewModel = HomeViewModel(useCase: DIContainer.homeUseCase)
-        viewModel?.loadSavedTags()
+        viewModel.loadSavedTags()
     }
     
     private func bind() {
@@ -46,10 +46,21 @@ final class HomeViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        viewModel?.savedTags
+        viewModel.allTags
             .subscribe(
                 onNext: { [weak self] tags in
-                    print(tags)
+                    self?.pagingViewController.reloadMenu()
+                },
+                onError: { [weak self] error in
+                    print(error)
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel.allPageContents
+            .observeOn(MainScheduler.instance)
+            .subscribe(
+                onNext: { [weak self] pageContents in
+                    self?.pagingViewController.reloadData()
                 },
                 onError: { [weak self] error in
                     print(error)
@@ -62,27 +73,28 @@ extension HomeViewController: HomeView {}
 
 extension HomeViewController: PagingViewControllerDataSource {
     func numberOfViewControllers(in pagingViewController: PagingViewController) -> Int {
-        return pageContents.count
+        return viewModel.allTags.value.count
     }
     
     func pagingViewController(_: PagingViewController, viewControllerAt index: Int) -> UIViewController {
-        return pageContents[index]
+        return viewModel.allPageContents.value[index]
     }
     
     func pagingViewController(_: PagingViewController, pagingItemAt index: Int) -> PagingItem {
-        return PagingIndexItem(index: index, title: pageTitles[index])
+        return PagingIndexItem(index: index, title: viewModel.allTags.value[index])
     }
 }
 
 private extension HomeViewController {
     private func configurePaging() {
         let viewController = PostViewController.instantiate(viewModel: PostViewModel(useCase: DIContainer.postUseCase))
-        pageContents.append(viewController)
+        viewModel.allPageContents.accept([viewController])
         
-        let pagingViewController = PagingViewController(viewControllers: pageContents)
+        pagingViewController = PagingViewController(viewControllers: viewModel.allPageContents.value)
         pagingViewController.selectedTextColor = .constant(.qiita)
         pagingViewController.indicatorColor = .constant(.qiita)
         pagingViewController.menuBackgroundColor = .dynamicColor(light: .white, dark: .black)
+        pagingViewController.textColor = .dynamicColor(light: .black, dark: .white)
         addChild(pagingViewController)
         view.addSubview(pagingViewController.view)
         pagingViewController.didMove(toParent: self)
@@ -96,6 +108,5 @@ private extension HomeViewController {
         ])
         
         pagingViewController.dataSource = self
-        
     }
 }

@@ -14,11 +14,9 @@ protocol HomeUseCase {
 final class HomeUseCaseImpl: HomeUseCase {
     
     private let repository: HomeRepository
-    private let translator: HomeTranslator
     
-    init(repository: HomeRepository, translator: HomeTranslator) {
+    init(repository: HomeRepository) {
         self.repository = repository
-        self.translator = translator
     }
     
     func loadSavedTags() -> Results<SavedTag> {

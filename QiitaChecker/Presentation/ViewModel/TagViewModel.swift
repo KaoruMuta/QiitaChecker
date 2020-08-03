@@ -24,15 +24,15 @@ final class TagViewModel {
     func fetchTags() {
         isLoading.accept(true)
         useCase.fetchTags()
-        .subscribe(
-            onSuccess: { [weak self] tags in
-                self?.tags.accept(tags)
-                self?.isLoading.accept(false)
-            },
-            onError: { [weak self] error in
-                self?.isLoading.accept(false)
-        })
-        .disposed(by: disposeBag)
+            .subscribe(
+                onSuccess: { [weak self] tags in
+                    self?.tags.accept(tags)
+                    self?.isLoading.accept(false)
+                },
+                onError: { [weak self] error in
+                    self?.isLoading.accept(false)
+            })
+            .disposed(by: disposeBag)
     }
     
     func saveTag(with tag: String) {
