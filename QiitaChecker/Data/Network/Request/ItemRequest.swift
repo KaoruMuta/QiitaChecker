@@ -10,11 +10,11 @@ import Alamofire
 enum ItemRequest: BaseRequest {
     typealias Response = ItemResponse
     
-    case get
+    case get(tag: [String: String]? = nil)
     
     var method: HTTPMethod {
         switch self {
-        case .get:
+        case .get(tag: _):
             return .get
         }
     }
@@ -24,6 +24,9 @@ enum ItemRequest: BaseRequest {
     }
     
     var parameters: Parameters? {
-        return nil
+        switch self {
+        case .get(tag: let tag):
+            return tag
+        }
     }
 }

@@ -14,4 +14,17 @@ struct DIContainer {
         let translator = PostTranslatorImpl()
         return PostUseCaseImpl(repository: repository, translator: translator)
     }()
+    
+    static let tagUseCase: TagUseCase = {
+        let dataStore = TagDataStoreImpl()
+        let repository = TagRepositoryImpl(dataStore: dataStore)
+        let translator = TagTranslatorImpl()
+        return TagUseCaseImpl(repository: repository, translator: translator)
+    }()
+    
+    static let homeUseCase: HomeUseCase = {
+        let dataStore = HomeDataStoreImpl()
+        let repository = HomeRepositoryImpl(dataStore: dataStore)
+        return HomeUseCaseImpl(repository: repository)
+    }()
 }

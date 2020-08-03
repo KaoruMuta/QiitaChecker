@@ -15,6 +15,7 @@ final class PostViewController: UIViewController {
     
     private var viewModel: PostViewModel?
     private let disposeBag = DisposeBag()
+    private var tag: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,16 +24,23 @@ final class PostViewController: UIViewController {
         configure()
     }
     
-    static func instantiate(viewModel: PostViewModel) -> UIViewController {
+    static func instantiate(viewModel: PostViewModel, from tag: String? = nil) -> UIViewController {
         let viewController = PostViewController.instantiate()
         viewController.viewModel = viewModel
+        viewController.tag = tag
         return viewController
     }
     
     private func configure() {
         postListView.delegate = self
         postListView.register(cellType: PostCell.self)
-        viewModel?.fetchArticles()
+        
+        if let tag = tag {
+            viewModel?.fetchArticles(with: tag)
+        } else {
+            viewModel?.fetchArticles()
+        }
+        
         bind()
     }
     

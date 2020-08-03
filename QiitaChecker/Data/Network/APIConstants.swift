@@ -9,11 +9,14 @@ import Foundation
 
 enum APIConstants {
     case fetchItem
+    case fetchTags
     
     public var path: String {
         switch self {
         case .fetchItem:
             return "/items"
+        case .fetchTags:
+            return "/tags"
         }
     }
     
