@@ -9,6 +9,7 @@ import RxSwift
 
 protocol PostUseCase {
     func fetchArticles() -> Single<[Post]>
+    func fetchArticles(with tag: String) -> Single<[Post]>
 }
 
 final class PostUseCaseImpl: PostUseCase {
@@ -25,5 +26,12 @@ final class PostUseCaseImpl: PostUseCase {
         repository.fetchArticles().map({ [unowned self] entity -> [Post] in
             return self.translator.translate(from: entity)
         })
+    }
+    
+    func fetchArticles(with tag: String) -> Single<[Post]> {
+        repository.fetchArticles(with: tag).map({ [unowned self] entity -> [Post] in
+            return self.translator.translate(from: entity)
+        })
+
     }
 }

@@ -15,20 +15,15 @@ final class PostViewModel {
     var isLoading: BehaviorRelay<Bool> = .init(value: false)
     var postItems: BehaviorRelay<[Post]> = .init(value: [])
     
-    private let fetchDisposable = SerialDisposable()
     private let disposeBag = DisposeBag()
     
     init(useCase: PostUseCase) {
         self.useCase = useCase
     }
     
-    private func configure() {
-        fetchDisposable.disposed(by: disposeBag)
-    }
-    
     func fetchArticles() {
         isLoading.accept(true)
-        fetchDisposable.disposable = useCase.fetchArticles()
+        useCase.fetchArticles()
             .subscribe(
                 onSuccess: { [weak self] data in
                     self?.isLoading.accept(false)
@@ -37,5 +32,20 @@ final class PostViewModel {
                 onError: { [weak self] error in
                     self?.isLoading.accept(false)
             })
+            .disposed(by: disposeBag)
+    }
+    
+    func fetchArticles(with tag: String) {
+        isLoading.accept(true)
+        useCase.fetchArticles(with: tag)
+            .subscribe(
+                onSuccess: { [weak self] data in
+                    self?.isLoading.accept(false)
+                    self?.postItems.accept(data)
+                },
+                onError: { [weak self] error in
+                    self?.isLoading.accept(false)
+            })
+            .disposed(by: disposeBag)
     }
 }

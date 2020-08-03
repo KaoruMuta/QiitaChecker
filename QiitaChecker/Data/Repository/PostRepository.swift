@@ -9,6 +9,7 @@ import RxSwift
 
 protocol PostRepository {
     func fetchArticles() -> Single<[ItemResponse]>
+    func fetchArticles(with tag: String) -> Single<[ItemResponse]>
 }
 
 final class PostRepositoryImpl: PostRepository {
@@ -21,5 +22,9 @@ final class PostRepositoryImpl: PostRepository {
     
     func fetchArticles() -> Single<[ItemResponse]> {
         return dataStore.fetchArticles()
+    }
+    
+    func fetchArticles(with tag: String) -> Single<[ItemResponse]> {
+        return dataStore.fetchArticles(with: tag)
     }
 }
