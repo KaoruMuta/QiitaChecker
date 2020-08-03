@@ -4,11 +4,11 @@
 
 # QiitaChecker
 ## What Is This App?
-QiitaChecker enables you to watch the latest articles of Qiita. In the future, I will implement the functions to watch the articles in user's selected tag.
+QiitaChecker enables you to watch the latest articles of Qiita. However, some problems are existed and should be revised.
 
 ## App Architecture
 In this app, I adopted MVVM + Clean Architecture. A Detail is shown in this figure.<br>
-This app separates three layers, `presentation layer`, `domain layer`, and `data layer`. In `presentation layer`, UI Event and Databinding are handled with viewcontroller and viewmodel. Essentially, logics are stored in viewmodel. In `domain layer`, usecase stores and performs domain logics and translates received immutable data (entity) into model through translator. In `data layer`, repository receives immutable data with datastore and pass it to usecase. Also, datastore receives the immutable data as entity from QiitaAPI and pass entity to repository.
+This app separates three layers, `presentation layer`, `domain layer`, and `data layer`. In `presentation layer`, UI Event and Databinding are handled with `ViewController` and `ViewModel`. Essentially, presentation logics are stored in `ViewModel`. In `domain layer`, `UseCase` stores and performs business logics and translates received immutable data (`Entity`) into `Model` through `Translator`. In `data layer`, `Repository` receives immutable data with `DataStore` and pass it to `UseCase`. Also, `DataStore` receives the immutable data as `Entity` from QiitaAPI and pass `Entity` to `Repository`.
 
 <div align="center">
   <img src="Architecture.png"></img>
@@ -76,3 +76,6 @@ open QiitaChecker.xcworkspace
 - https://www.slideshare.net/ssuser3bddf8/clean-architecture-71046114
 - https://qiita.com/H_Crane/items/d2d316b086745417ffae
 - https://qiita.com/shira-shun/items/778e65308f26860664fc
+
+# License
+Under MIT
