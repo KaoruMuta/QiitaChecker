@@ -17,13 +17,27 @@ final class PostViewModel {
     
     private let disposeBag = DisposeBag()
     
-    init(useCase: PostUseCase, with tag: String? = nil) {
+    init(useCase: PostUseCase) {
         self.useCase = useCase
     }
     
     func fetchArticles() {
         isLoading.accept(true)
         useCase.fetchArticles()
+            .subscribe(
+                onSuccess: { [weak self] data in
+                    self?.isLoading.accept(false)
+                    self?.postItems.accept(data)
+                },
+                onError: { [weak self] error in
+                    self?.isLoading.accept(false)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    func fetchArticles(with tag: String) {
+        isLoading.accept(true)
+        useCase.fetchArticles(with: tag)
             .subscribe(
                 onSuccess: { [weak self] data in
                     self?.isLoading.accept(false)

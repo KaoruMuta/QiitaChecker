@@ -16,7 +16,6 @@ final class HomeViewModel {
     
     var isLoading: BehaviorRelay<Bool> = .init(value: false)
     var allTags: BehaviorRelay<[String]> = .init(value: [L10n.latestPost])
-    var allPageContents: BehaviorRelay<[UIViewController]> = .init(value: [])
     
     private let disposeBag = DisposeBag()
     

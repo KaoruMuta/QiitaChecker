@@ -10,8 +10,6 @@ import Parchment
 import RxSwift
 import RxCocoa
 
-protocol HomeView {}
-
 final class HomeViewController: UIViewController {
     
     private var viewModel: HomeViewModel!
@@ -49,17 +47,6 @@ final class HomeViewController: UIViewController {
         viewModel.allTags
             .subscribe(
                 onNext: { [weak self] tags in
-                    self?.pagingViewController.reloadMenu()
-                },
-                onError: { [weak self] error in
-                    print(error)
-            })
-            .disposed(by: disposeBag)
-        
-        viewModel.allPageContents
-            .observeOn(MainScheduler.instance)
-            .subscribe(
-                onNext: { [weak self] pageContents in
                     self?.pagingViewController.reloadData()
                 },
                 onError: { [weak self] error in
@@ -69,15 +56,17 @@ final class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: HomeView {}
-
 extension HomeViewController: PagingViewControllerDataSource {
     func numberOfViewControllers(in pagingViewController: PagingViewController) -> Int {
         return viewModel.allTags.value.count
     }
     
     func pagingViewController(_: PagingViewController, viewControllerAt index: Int) -> UIViewController {
-        return viewModel.allPageContents.value[index]
+        if index == 0 {
+            return PostViewController.instantiate(viewModel: PostViewModel(useCase: DIContainer.postUseCase))
+        } else {
+            return PostViewController.instantiate(viewModel: PostViewModel(useCase: DIContainer.postUseCase), from: viewModel.allTags.value[index])
+        }
     }
     
     func pagingViewController(_: PagingViewController, pagingItemAt index: Int) -> PagingItem {
@@ -87,10 +76,7 @@ extension HomeViewController: PagingViewControllerDataSource {
 
 private extension HomeViewController {
     private func configurePaging() {
-        let viewController = PostViewController.instantiate(viewModel: PostViewModel(useCase: DIContainer.postUseCase))
-        viewModel.allPageContents.accept([viewController])
-        
-        pagingViewController = PagingViewController(viewControllers: viewModel.allPageContents.value)
+        pagingViewController = PagingViewController(viewControllers: [])
         pagingViewController.selectedTextColor = .constant(.qiita)
         pagingViewController.indicatorColor = .constant(.qiita)
         pagingViewController.menuBackgroundColor = .dynamicColor(light: .white, dark: .black)
