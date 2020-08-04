@@ -57,14 +57,17 @@ and
 open QiitaChecker.xcworkspace
 ```
 
+## Future Work
+- Improve UX (ex. add checkbox in TagCell to watch whether item is selected or not)
+- add the function to search tags and posts by themselves
 
 ## Used Libraries
 - [QiitaAPI](https://qiita.com/api/v2/docs)
 - [RxSwift](https://github.com/ReactiveX/RxSwift)
+- [RxRealm](https://github.com/RxSwiftCommunity/RxRealm)
 - [Alamofire](https://github.com/Alamofire/Alamofire)
 - [Parchment](https://github.com/rechsteiner/Parchment)
-- [Floaty](https://github.com/kciter/Floaty)
-- [Nuke](https://github.com/kean/Nuke)  
+- [Nuke](https://github.com/kean/Nuke)
 - [XcodeGen](https://github.com/yonaskolb/XcodeGen)
 - [SwiftLint](https://github.com/realm/SwiftLint)
 - [SwiftGen](https://github.com/SwiftGen/SwiftGen)
@@ -76,6 +79,7 @@ open QiitaChecker.xcworkspace
 - https://www.slideshare.net/ssuser3bddf8/clean-architecture-71046114
 - https://qiita.com/H_Crane/items/d2d316b086745417ffae
 - https://qiita.com/shira-shun/items/778e65308f26860664fc
+- https://medium.com/@aliakhtar_16369/rxrealm-realmswift-part-7-cf83c4a3edb5
 
 # License
-Under MIT
+Under MIT License
