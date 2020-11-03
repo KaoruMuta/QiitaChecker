@@ -68,3 +68,7 @@ carthage_version_clear:
 .PHONY: resources
 resources:
 	./Pods/SwiftGen/bin/swiftgen
+
+.PHONY: update
+carthage_update: 
+	carthage update --platform iOS
