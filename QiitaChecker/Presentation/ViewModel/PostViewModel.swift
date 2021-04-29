@@ -29,7 +29,7 @@ final class PostViewModel {
                     self?.isLoading.accept(false)
                     self?.postItems.accept(data)
                 },
-                onError: { [weak self] error in
+                onFailure: { [weak self] error in
                     self?.isLoading.accept(false)
             })
             .disposed(by: disposeBag)
@@ -43,7 +43,7 @@ final class PostViewModel {
                     self?.isLoading.accept(false)
                     self?.postItems.accept(data)
                 },
-                onError: { [weak self] error in
+                onFailure: { [weak self] error in
                     self?.isLoading.accept(false)
             })
             .disposed(by: disposeBag)

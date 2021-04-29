@@ -29,7 +29,7 @@ final class TagViewModel {
                     self?.tags.accept(tags)
                     self?.isLoading.accept(false)
                 },
-                onError: { [weak self] error in
+                onFailure: { [weak self] error in
                     self?.isLoading.accept(false)
             })
             .disposed(by: disposeBag)

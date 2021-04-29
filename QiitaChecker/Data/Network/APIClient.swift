@@ -15,12 +15,12 @@ struct APIClient {
     
     static func call<T, V>(_ request: T, _ disposeBag: DisposeBag, onSuccess: @escaping ([V]) -> Void, onError: @escaping (Error) -> Void) where T: BaseRequest, V: Codable, T.Response == V {
         _ = send(request: request)
-            .observeOn(MainScheduler.instance)
+            .observe(on: MainScheduler.instance)
             .subscribe(
                 onSuccess: {
                     onSuccess($0)
-            },
-                onError: {
+                },
+                onFailure: {
                     onError($0)
             })
             .disposed(by: disposeBag)
