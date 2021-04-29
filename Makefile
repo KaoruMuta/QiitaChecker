@@ -1,8 +1,8 @@
 .PHONY: all
-all: bundle_install_force xcodegen pods_force carthage_if_needed resources;
+all: bundle_install_force xcodegen pods_force resources;
 
 .PHONY: clean
-clean: pods_cache_clear carthage_cache_clear carthage_derived_data_clear;
+clean: pods_cache_clear;
 
 .PHONY: xcodegen
 xcodegen:
@@ -44,31 +44,7 @@ pods_force: pods_cache_clear bundle_install pods_with_repo_update;
 pods_cache_clear:
 	rm -rf ./Pods
 
-.PHONY: carthage
-carthage:
-	carthage bootstrap --platform iOS --cache-builds --no-use-binaries
-
-# Install libraries via carthage if you have not installed yet
-.PHONY: carthage_if_needed
-carthage_if_needed:
-	test `find ./Carthage/Build/ 2>/dev/null | wc -l` -ne 0 || carthage bootstrap --platform iOS --cache-builds --no-use-binaries
-
-.PHONY: carthage_cache_clear
-carthage_cache_clear:
-	rm -rf ./Carthage
-
-.PHONY: carthage_derived_data_clear
-carthage_derived_data_clear:
-	rm -rf ${HOME}/Library/Caches/org.carthage.CarthageKit/DerivedData/*
-
-.PHONY: carthage_version_clear
-carthage_version_clear:
-	rm Cartfile.resolved
-
 .PHONY: resources
 resources:
 	./Pods/SwiftGen/bin/swiftgen
 
-.PHONY: update
-carthage_update: 
-	carthage update --platform iOS

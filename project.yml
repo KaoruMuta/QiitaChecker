@@ -12,16 +12,6 @@ targets:
         DEVELOPMENT_TEAM: Kaoru Muta
         INFOPLIST_FILE: QiitaChecker/Common/Resource/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaChecker
-    dependencies:
-      - carthage: RxSwift
-      - carthage: RxCocoa
-      - carthage: RxRelay
-      - carthage: RxRealm
-      - carthage: Alamofire
-      - carthage: Parchment
-      - carthage: Nuke
-      - carthage: Realm
-      - carthage: RealmSwift
     preBuildScripts:
       - script: |
           Pods/SwiftLint/swiftlint autocorrect

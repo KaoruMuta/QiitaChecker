@@ -1,5 +1,0 @@
-github "ReactiveX/RxSwift" == 5.1.1
-github "Alamofire/Alamofire" == 5.2
-github "rechsteiner/Parchment" == 2.4
-github "kean/Nuke" == 9.0
-github "RxSwiftCommunity/RxRealm" == 3.1
