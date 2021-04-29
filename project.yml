@@ -1,4 +1,21 @@
 name: QiitaChecker
+packages:
+  RxSwift:
+    url: https://github.com/ReactiveX/RxSwift
+    from: 6.1.0
+  RxRealm:
+    url: https://github.com/RxSwiftCommunity/RxRealm
+    from: 5.0.1
+  Alamofire:
+    url: https://github.com/Alamofire/Alamofire
+    from: 5.4.3
+  Parchment:
+    url: https://github.com/rechsteiner/Parchment
+    from: 3.0.1
+  Nuke:
+    url: https://github.com/kean/Nuke
+    from: 9.5.1
+
 targets:
   QiitaChecker:
     type: application
@@ -19,6 +36,16 @@ targets:
       - script: |
           Pods/SwiftLint/swiftlint
         name: SwiftLint
+    dependencies:
+      - package: RxSwift
+      - package: RxSwift
+        product: RxCocoa
+      - package: RxSwift
+        product: RxRelay
+      - package: RxRealm
+      - package: Alamofire
+      - package: Parchment
+      - package: Nuke
   QiitaCheckerTests:
     type: bundle.unit-test
     platform: iOS
@@ -28,6 +55,10 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.muta.QiitaCheckerTests
     dependencies: 
       - target: QiitaChecker
+      - package: RxSwift
+        product: RxBlocking
+      - package: RxSwift
+        product: RxTests
   QiitaCheckerUITests:
     type: bundle.ui-testing
     platform: iOS
