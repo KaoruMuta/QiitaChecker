@@ -33,7 +33,7 @@ struct APIClient {
                 case .success(let result):
                     observer(.success(result as! [V]))
                 case .failure(let error):
-                    observer(.error(error))
+                    observer(.failure(error))
                 }
             }
             return Disposables.create { calling.cancel() }
