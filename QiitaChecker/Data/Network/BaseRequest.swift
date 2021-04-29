@@ -5,6 +5,7 @@
 //  Created by k_muta on 2020/07/21.
 //
 
+import Foundation
 import Alamofire
 
 protocol BaseRequest: BaseAPI, URLRequestConvertible {
